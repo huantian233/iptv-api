@@ -1,10 +1,10 @@
 # 这是频道名称的别名名单，用于获取接口时将多种名称映射为一个名称的结果，可以提升获取量与准确率
 # 格式：主名（对应demo.txt模板中的频道名称）,别名1,别名2,别名3
-# 支持使用正则表达式匹配别名，以re:开头的别名将被识别为正则表达式，例如CCTV-1,re:CCTV[-\s]*0?1(?!\d)
-# This is the alias list for channel names, used to map multiple names to a single name when fetching from the interface, improving the fetch volume and accuracy.
-# Format: Main name (corresponds to channel name in demo.txt template), alias1, alias2, alias3
-# Aliases support regex matching. Aliases starting with re: are recognized as regular expressions, e\.g\. CCTV-1,re:CCTV[-\s]*0?1(?!\d)
+# 支持使用正则表达式匹配别名，以re:开头的别名将被识别为正则表达式
 
+# ==============================
+# 中央电视台 (CCTV)
+# ==============================
 CCTV-1,re:CCTV[-\s]*0?1(?!\d),CCTV1,CCTV-01,CCTV-01_ITV,CCTV-01北联,CCTV-01电信,CCTV-01东联,CCTV-01高码,CCTV-01高清,CCTV-01广西,CCTV-01梅州,CCTV-01咪咕,CCTV-01汝阳,CCTV-01山东,CCTV-01上海,CCTV-01斯特,CCTV-01四川,CCTV-01太原,CCTV-01天津,CCTV-01影视,CCTV-01浙江,CCTV-01重庆,CCTV1综合,CCTV-1综合,CCTV1(B),CCTV1[1920*1080],CCTV1「IPV6」,CCTV1HD,CCTV-1HD,CCTV1-标清,CCTV1港澳牿,CCTV-1高清,CCTV1-综合,CCTV-1综合ᴴᴰ
 CCTV-2,re:CCTV[-\s]*0?2,CCTV2,CCTV-02,CCTV-02_ITV,CCTV-02北联,CCTV-02电信,CCTV-02东联,CCTV-02高码,CCTV-02高清,CCTV-02广西,CCTV-02梅州,CCTV-02咪咕,CCTV-02汝阳,CCTV-02山东,CCTV-02上海,CCTV-02斯特,CCTV-02四川,CCTV-02太原,CCTV-02天津,CCTV-02影视,CCTV-02浙江,CCTV-02重庆,CCTV2财经,CCTV-2财经,CCTV2[1280*720],CCTV2「IPV6」,CCTV20241,CCTV22,CCTV250,CCTV2HD,CCTV-2HD,CCTV2-标清,CCTV2-财经,CCTV-2财经ᴴᴰ,CCTV-2高清
 CCTV-3,re:CCTV[-\s]*0?3,CCTV3,CCTV-03,CCTV-03_ITV,CCTV-03北联,CCTV-03电信,CCTV-03东联,CCTV-03高码,CCTV-03高清,CCTV-03广西,CCTV-03梅州,CCTV-03咪咕,CCTV-03汝阳,CCTV-03山东,CCTV-03上海,CCTV-03斯特,CCTV-03四川,CCTV-03太原,CCTV-03天津,CCTV-03影视,CCTV-03浙江,CCTV-03重庆,CCTV3综艺,CCTV-3综艺,CCTV3[1920*1080],CCTV3「IPV6」,CCTV3HD,CCTV-3HD,CCTV3-标清,CCTV-3高清,CCTV-3-高清,CCTV3-综艺,CCTV-3综艺ᴴᴰ
@@ -28,6 +28,9 @@ CCTV-4欧洲,re:CCTV[-\s]*0?4.*欧洲,CCTV4欧洲,CCTV4欧洲咪咕
 CCTV-4K,re:CCTV[-\s]*0?4[Kk],CCTV4K,cctv4k_10m,CCTV4K超高清,CCTV-4K超高清,CCTV-4k高码,CCTV-4K广西,CCTV-4k浙江
 CCTV-8K,re:CCTV[-\s]*0?8[Kk],CCTV8K,CCTV8K 超高清,CCTV-8K超高清[3840*2160],cctv8k_120m,cctv8k_36m,CCTV8K超高清,CCTV-8k高码
 
+# ==============================
+# 央视数字/付费频道
+# ==============================
 兵器科技,CCTV兵器,CCTV兵器科技,CCTV-兵器科技,CCTV兵器科技HD
 第一剧场,CCTV第一剧场,CCTV-第一剧场,CCTV第一剧场HD,风云剧场,中国电影,CCTV电影轮播
 发现之旅,CCTV发现之旅,CCTV-发现之旅,中央新影-发现之旅
@@ -43,7 +46,14 @@ CCTV-8K,re:CCTV[-\s]*0?8[Kk],CCTV8K,CCTV8K 超高清,CCTV-8K超高清[3840*2160]
 文化精品,CCTV文化精品,CCTV-文化精品,CCTV央视文化精品,CCTV-央视文化精品,CCTV央视文化精品HD
 百姓健康,CCTV卫生健康,CCTV-卫生健康,CCTV卫生与健康
 中学生,CCTV中学甿,CCTV中学生,CCTV-中学生,中央新影-中学甿,中央新影-中学生
+CHC动作电影,CHC动作,CHC动作高清
+CHC家庭影院,CHC家庭,CHC影院
+求索纪录,求索,求索科学
+全纪实,纪实,全纪实频道
 
+# ==============================
+# 教育台 & CGTN
+# ==============================
 CETV-1,CETV1,CETV1中国教育,CETV1 中国教育,中国教育1,中国教育1HD
 CETV-2,CETV2,CETV2中国教育,CETV2 中国教育,中国教育2,中国教育2HD
 CETV-3,CETV3,CETV3中国教育,CETV3 中国教育,中国教育3,中国教育3HD
@@ -52,19 +62,56 @@ CETV早教,CETV早期教育,早期教育
 CGTN英语,CGTN英语新闻
 CGTN俄语,CGTN俄罗斯语
 
-广东珠江,GDTV-2,珠江,珠江频道,珠江台,广东珠江高清,珠江高清
-
-翡翠台,TVb翡翠台,tvb翡翠台,TVB翡翠台
-明珠台,TVb明珠台,tvb明珠台,TVB明珠台,TVB Pearl
+# ==============================
+# 地方卫视 - 热门补充
+# ==============================
 北京卫视,北京卫视4K,北京卫视4K超高清
-凤凰中文,凤凰卫视中文台
-凤凰香港,凤凰卫视香港台
+四川卫视,四川卫视4K,四川卫视4K25,四川卫视4K50
+湖南卫视,湖南卫视4K,湖南卫视4K25,湖南卫视4K50
+浙江卫视,浙江卫视高清,浙江台,ZJTV
+江苏卫视,江苏卫视高清,江苏台,JSTV
+东方卫视,上海东方卫视,东方卫视高清,Dragon TV
+深圳卫视,深圳卫视高清,深圳台
+广东卫视,广东卫视高清,广东台
+安徽卫视,安徽卫视高清,安徽台
+山东卫视,山东卫视高清,山东台
+湖北卫视,湖北卫视高清,湖北台
+辽宁卫视,辽宁卫视高清,辽宁台
+黑龙江卫视,黑龙江卫视高清,黑龙江台
+天津卫视,天津卫视高清,天津台
+重庆卫视,重庆卫视高清,重庆台
+东南卫视,福建东南卫视,东南台
+海南卫视,旅游卫视
+
+# ==============================
+# 地方特色频道
+# ==============================
+广东珠江,GDTV-2,珠江,珠江频道,珠江台,广东珠江高清,珠江高清
 福建文体,福建体育
 福建经济,福建经视
 FZTV1,FZTV-1,福州综合,福州1-新闻
 FZTV3,FZTV-3,福州生活,福州3-生活
+赣州新闻,GZSXW,GZSNews
+北京卡酷少儿,卡酷少儿,卡酷少儿高清,卡酷少儿HD,北京卡酷少儿HD,卡酷少儿高码,北京卡酷少儿高码,KAKU,kaku,KaKu,卡酷动画,卡酷动画HD
+嘉佳卡通,广东嘉佳卡通
+金鹰卡通,湖南金鹰卡通
+哈哈炫动,炫动卡通,上海哈哈炫动
+优漫卡通,江苏优漫卡通
+游戏风云,SiTV游戏风云,游戏风云HD
+动漫秀场,SiTV动漫秀场,动漫秀场HD
 
-无线新闻台,無綫新聞台,無線新聞台,无线新闻,TVB无线新闻,TVB无线新闻台
+# ==============================
+# 香港频道 (Hong Kong)
+# ==============================
+翡翠台,TVb翡翠台,tvb翡翠台,TVB翡翠台,Jade
+明珠台,TVb明珠台,tvb明珠台,TVB明珠台,TVB Pearl
+无线新闻台,無綫新聞台,無線新聞台,无线新闻,TVB无线新闻,TVB无线新闻台,TVB News
+J2,TVB J2,无线J2,無綫J2,J2台
+ViuTV,Viu TV,ViuTV 99,ViuTV99
+ViuTV 6,ViuTV6,ViuTV 96,ViuTV96,ViuSix
+凤凰中文,凤凰卫视中文台
+凤凰香港,凤凰卫视香港台
+凤凰资讯,凤凰卫视资讯台
 
 港台电视 31,港台電視 31,RTHK31,RTHK 31,RTHK-31
 港台电视 32,港台電視 32,RTHK32,RTHK 32,RTHK-32
@@ -77,10 +124,76 @@ CGTN 英語頻道,RTHK35,RTHK 35,RTHK-35
 *HOY TV,HOY TV
 *HOY 資訊台,HOY 資訊台,*HOY 资讯台,HOY 资讯台,HOY资讯台
 
-赣州新闻,GZSXW,GZSNews
+# ==============================
+# 台湾频道 - 无线台 (Terrestrial)
+# ==============================
+台视,re:台视|台視,TTV,TTV Main,台湾电视台,臺灣電視台,台视主频
+中视,re:中视|中視,CTV,CTV Main,中国电视台,中國電視台,中视主频
+华视,re:华视|華視,CTS,CTS Main,中华电视台,中華電視台,华视主频
+民视,re:民视|民視,FTV,FTV Main,民视无线台,民視無線台
+公视,re:公视|公視,PTS,PTS Main,公共电视,公共電視,公视1台
+客家电视台,Hakka TV,客家電視台,客家台
+原住民族电视台,TITV,原住民族電視台,原视
 
-北京卡酷少儿,卡酷少儿,卡酷少儿高清,卡酷少儿HD,北京卡酷少儿HD,卡酷少儿高码,北京卡酷少儿高码,KAKU,kaku,KaKu,卡酷动画,卡酷动画HD
+# ==============================
+# 台湾频道 - 新闻台 (News)
+# ==============================
+TVBS新闻,TVBS-NEWS,TVBS新闻台,TVBS新聞,TVBS新聞台
+东森新闻,EBC News,东森新闻台,東森新聞,東森新聞台
+中天新闻,CTI News,中天新闻台,中天新聞,中天新聞台
+三立新闻,SET News,三立新闻台,三立新聞,三立新聞台,三立iNews,SET iNews
+民视新闻,FTV News,民视新闻台,民視新聞,民視新聞台
+年代新闻,Era News,年代新闻台,年代新聞,年代新聞台
+壹电视新闻,Next TV,壹电视,壹電視,壹電視新聞台
+寰宇新闻,Global News,寰宇新聞,寰宇新聞台,寰宇新闻二台,寰宇新聞二台
+镜电视,Mirror TV,镜新闻,鏡電視,鏡新聞
 
+# ==============================
+# 台湾频道 - 综艺/娱乐/戏剧 (Entertainment)
+# ==============================
+TVBS欢乐台,TVBS-E,TVBS欢尔台,TVBS歡樂台,TVBS Joy
+中天综合,CTI Variety,中天綜合,中天綜合台
+中天娱乐,CTI Entertainment,中天娛樂,中天娛樂台
+三立都会,SET Metro,三立都会台,三立都會,三立都會台
+三立台湾,SET Taiwan,三立台湾台,三立台灣,三立台灣台
+东森综合,EBC Variety,东森综合台,東森綜合,東森綜合台
+东森戏剧,EBC Drama,东森戏剧台,東森戲劇,東森戲劇台
+八大第一,GTV One,八大第一台,GTV第1台
+八大综合,GTV Variety,八大综合台,八大綜合,八大綜合台
+八大戏剧,GTV Drama,八大戏剧台,八大戲劇,八大戲劇台
+纬来日本,Videoland Japan,纬来日本台,緯來日本,緯來日本台
+纬来戏剧,Videoland Drama,纬来戏剧台,緯來戲劇,緯來戲劇台
+纬来综合,Videoland Variety,纬来综合台,緯來綜合,緯來綜合台
+
+# ==============================
+# 台湾频道 - 电影 (Movies)
+# ==============================
+东森电影,EBC Movies,东森电影台,東森電影,東森電影台
+东森洋片,EBC Foreign Movies,东森洋片台,東森洋片,東森洋片台
+纬来电影,Videoland Movie,纬来电影台,緯來電影,緯來電影台
+卫视电影,Star Chinese Movies,卫视电影台,衛視電影,衛視電影台
+龙华电影,LTV Movie,龙华电影台,龍華電影
+
+# ==============================
+# 台湾频道 - 体育 (Sports)
+# ==============================
+爱尔达体育1台,re:爱尔达体育\s*1,ELTA Sports 1,愛爾達體育1台,ELTA体育1台
+爱尔达体育2台,re:爱尔达体育\s*2,ELTA Sports 2,愛爾達體育2台,ELTA体育2台
+爱尔达体育3台,re:爱尔达体育\s*3,ELTA Sports 3,愛爾達體育3台,ELTA体育3台
+纬来体育,Videoland Sports,纬来体育台,緯來體育,緯來體育台
+博斯运动1台,Sportcast 1,博斯運動一,博斯运动一
+博斯无限台,Sportcast Infinite,博斯無限
+
+# ==============================
+# 台湾频道 - 财经 (Finance)
+# ==============================
+东森财经,EBC Financial,东森财经台,東森財經,東森財經新聞台
+非凡新闻,USTV News,非凡新聞,非凡新聞台
+非凡商业,USTV Business,非凡商業,非凡商業台
+
+# ==============================
+# NewTV & iHOT 系列
+# ==============================
 黑莓电影,NewTV黑莓电影
 黑莓动画,NewTV黑莓动画
 家庭剧场,NewTV家庭剧场
@@ -88,23 +201,12 @@ CGTN 英語頻道,RTHK35,RTHK 35,RTHK-35
 超级电影,NewTV超级电影
 动作电影,NewTV动作电影
 哒啵电竞,NewTV哒啵电竞
-
-游戏风云,SiTV游戏风云
-动漫秀场,SiTV动漫秀场
-游戏风云.SiTV游戏风云
-
 爱动漫,iHOT爱动漫
 新动漫,iHOT新动漫
 爱幼教,iHOT爱幼教
 爱电竞,iHOT爱电竞
-
 电竞天堂,BesTV电竞天堂
 宝宝动画,BesTV宝宝动画
-
-嘉佳卡通,广东嘉佳卡通
-金鹰卡通,湖南金鹰卡通
-哈哈炫动,炫动卡通,上海哈哈炫动
-优漫卡通,江苏优漫卡通
 
 NewTV爱情喜剧,NEWTV爱情喜剧,爱情喜剧
 NewTV超级体育,NEWTV超级体育,超级体育
@@ -130,6 +232,3 @@ NewTV农业致富,NEWTV农业致富,农业致富
 NewTV武搏世界,NEWTV武搏世界,武搏世界,武博世界,武术世界
 NewTV怡伴健康,NEWTV怡伴健康,怡伴健康
 NewTV中国功夫,NEWTV中国功夫,中国功夫
-
-四川卫视,四川卫视4K,四川卫视4K25,四川卫视4K50
-湖南卫视,湖南卫视4K,湖南卫视4K25,湖南卫视4K50

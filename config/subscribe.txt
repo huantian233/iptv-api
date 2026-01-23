@@ -1,9 +1,9 @@
 # 这是订阅源列表，每行一个订阅地址
 # This is a list of subscription sources, with one subscription address per line
-
-
-
-
+https://bc.188766.xyz/?ip=&mima=bingcha1130
+http://iptv.cqshushu.com/?s=183.62.8.58%3A50085&t=hotel&channels=1&format=m3u
+http://iptv.cqshushu.com/?s=219.135.176.78%3A85&t=hotel&channels=1&format=m3u
+https://live.hacks.tools/tv/ipv4/categories/taiwan.m3u
 
 [WHITELIST]
 # 以下是订阅源的白名单，白名单内的订阅源获取的接口将不会参与测速，始终保留至结果最前。
