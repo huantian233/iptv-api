@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-01-23 17:25:42,http://219.135.176.78:85/tsfile/live/616/2001_1.m3u8?key=txiptv
+2026-01-23 18:37:58,http://219.135.176.78:85/tsfile/live/616/2001_1.m3u8?key=txiptv
 
 📺央视频道,#genre#
 CCTV-1,http://219.135.176.78:85/tsfile/live/616/2001_1.m3u8?key=txiptv
@@ -8,8 +8,8 @@ CCTV-2,http://219.135.176.78:85/tsfile/live/617/2002_1.m3u8?key=txiptv
 CCTV-2,http://183.62.8.58:50085/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-3,http://219.135.176.78:85/tsfile/live/618/2003_1.m3u8?key=txiptv
 CCTV-3,http://183.62.8.58:50085/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
-CCTV-4,http://219.135.176.78:85/tsfile/live/619/2004_1.m3u8?key=txiptv
 CCTV-4,http://219.135.176.78:85/tsfile/live/628/2013_1.m3u8?key=txiptv
+CCTV-4,http://219.135.176.78:85/tsfile/live/619/2004_1.m3u8?key=txiptv
 CCTV-4,http://183.62.8.58:50085/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-5,http://219.135.176.78:85/tsfile/live/620/2005_1.m3u8?key=txiptv
 CCTV-5,http://183.62.8.58:50085/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
