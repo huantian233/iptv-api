@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-01-23 17:02:07,http://219.135.176.78:85/tsfile/live/616/2001_1.m3u8?key=txiptv
+2026-01-23 17:25:42,http://219.135.176.78:85/tsfile/live/616/2001_1.m3u8?key=txiptv
 
 📺央视频道,#genre#
 CCTV-1,http://219.135.176.78:85/tsfile/live/616/2001_1.m3u8?key=txiptv
@@ -125,8 +125,8 @@ CETV-4,https://migu.188766.xyz/?migutoken=5c8ba41dfa4ffee0c48e0bfe6926afd4&id=CE
 广东珠江,http://219.135.176.78:85/tsfile/live/639/2024_1.m3u8?key=txiptv
 广东珠江,http://183.62.8.58:50085/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
 广东珠江,https://hk.188766.xyz/?migutoken=8744ca84eddf1dbf6f464e00de37f5b9&id=gd_gdzj&type=sz
-广东体育,http://183.62.8.58:50085/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
 广东体育,http://219.135.176.78:85/tsfile/live/641/2026_1.m3u8?key=txiptv
+广东体育,http://183.62.8.58:50085/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
 广东体育,https://migu.188766.xyz/?migutoken=80f151799a27c3dedab0e3f9cfedd1bb&id=hk_gdty&type=dy
 广东体育,https://hk.188766.xyz/?migutoken=a39805911190c43727068baeee61ccb0&id=gd_gdty&type=sz
 广东新闻,http://219.135.176.78:85/tsfile/live/640/2025_1.m3u8?key=txiptv

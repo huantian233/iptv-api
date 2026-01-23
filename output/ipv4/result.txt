@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-01-23 17:02:07,http://219.135.176.78:85/tsfile/live/616/2001_1.m3u8?key=txiptv
+2026-01-23 17:25:42,http://219.135.176.78:85/tsfile/live/616/2001_1.m3u8?key=txiptv
 
 📺央视频道,#genre#
 CCTV-1,http://219.135.176.78:85/tsfile/live/616/2001_1.m3u8?key=txiptv
@@ -81,8 +81,8 @@ CCTV-15,http://183.62.8.58:50085/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&a
 ☘️广东频道,#genre#
 广东珠江,http://219.135.176.78:85/tsfile/live/639/2024_1.m3u8?key=txiptv
 广东珠江,http://183.62.8.58:50085/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
-广东体育,http://183.62.8.58:50085/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
 广东体育,http://219.135.176.78:85/tsfile/live/641/2026_1.m3u8?key=txiptv
+广东体育,http://183.62.8.58:50085/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
 广东新闻,http://219.135.176.78:85/tsfile/live/640/2025_1.m3u8?key=txiptv
 广东卫视,http://183.62.8.58:50085/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0
 广东卫视,http://219.135.176.78:85/tsfile/live/638/2023_1.m3u8?key=txiptv
