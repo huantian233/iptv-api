@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-01-24 16:18:22,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
+2026-01-24 18:39:20,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
 
 📺央视频道,#genre#
 CCTV-1,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
@@ -128,6 +128,7 @@ CETV-4,https://migu.188766.xyz/?migutoken=37d2643839c6dab69155c1b2d8194f3c&id=CE
 广东珠江,https://hk.188766.xyz/?migutoken=6425382152e7e38349659a465e61907c&id=gd_gdzj&type=sz
 广东珠江,http://r.jdshipin.com/sE5vO
 广东珠江,http://cdn2.163189.xyz/live/gdzj/stream.m3u8
+广东珠江,http://cdn2.132.us.kg/live/gdzj/stream.m3u8
 广东体育,https://migu.188766.xyz/?migutoken=80f151799a27c3dedab0e3f9cfedd1bb&id=hk_gdty&type=dy
 广东体育,https://hk.188766.xyz/?migutoken=a39805911190c43727068baeee61ccb0&id=gd_gdty&type=sz
 广东体育,https://migu.188766.xyz/?migutoken=4f209778a3ef5af0bbd4a83a98ba440e&id=hk_gdty&type=dy
@@ -137,6 +138,7 @@ CETV-4,https://migu.188766.xyz/?migutoken=37d2643839c6dab69155c1b2d8194f3c&id=CE
 广东新闻,https://hk.188766.xyz/?migutoken=042c7b34ed8beac38ac371959ab78730&id=gd_gdxw&type=sz
 广东卫视,https://migu.188766.xyz/?migutoken=cc879805fdfb63553cd05cd39cc54d1f&id=%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86&type=yy
 广东卫视,https://migu.188766.xyz/?migutoken=6df1bc70866b2d251bd6634ad26de1e2&id=%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86&type=yy
+广东卫视,http://iptv.huuc.edu.cn/hls/gdhd.m3u8
 广东民生,https://hk.188766.xyz/?migutoken=aee5688b193fad8328e61ce47543f064&id=gd_gdms&type=sz
 广东民生,https://hk.188766.xyz/?migutoken=c1418928cceffeb70b24829f01a2873e&id=gd_gdms&type=sz
 大湾区卫视,https://migu.188766.xyz/?migutoken=0e8def20f9107695042dbfcff2695bfe&id=%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%86&type=yy
@@ -145,6 +147,7 @@ CETV-4,https://migu.188766.xyz/?migutoken=37d2643839c6dab69155c1b2d8194f3c&id=CE
 广州综合,http://r.jdshipin.com/snhya
 深圳卫视,https://migu.188766.xyz/?migutoken=48b4c4871acd1776560c40fb8a92dd09&id=%E6%B7%B1%E5%9C%B3%E5%8D%AB%E8%A7%86&pp=1
 深圳卫视,https://migu.188766.xyz/?migutoken=dda71ebf87d8546061be2316204d1f9a&id=%E6%B7%B1%E5%9C%B3%E5%8D%AB%E8%A7%86&pp=1
+深圳卫视,http://iptv.huuc.edu.cn/hls/szhd.m3u8
 
 🇭🇰港澳频道,#genre#
 翡翠台,http://r.jdshipin.com/qClQf
@@ -160,6 +163,8 @@ CETV-4,https://migu.188766.xyz/?migutoken=37d2643839c6dab69155c1b2d8194f3c&id=CE
 无线新闻,http://r.jdshipin.com/CkuBd
 ViuTV,http://r.jdshipin.com/vSJvl
 ViuTV,http://r.jdshipin.com/TcKr2
+ViuTV,http://php.jdshipin.com/TVOD/iptv.php?id=viutv
+ViuTV,http://php.jdshipin.com/TVOD/iptv.php?id=viutv2
 HOY TV,http://r.jdshipin.com/sFw4S
 凤凰中文,https://mgev.188766.xyz/?migutoken=91df1b70e0509122cab788f5b9e873e9&id=fhzw&pp=1
 凤凰中文,https://mgev.188766.xyz/?migutoken=6bef7fd3d8fa054a4e3388b55699df16&id=hk_fhzw&type=dy
@@ -178,5 +183,8 @@ HOY TV,http://r.jdshipin.com/sFw4S
 凤凰香港,http://r.jdshipin.com/yDoTN
 澳视澳门,https://mgev.188766.xyz/?migutoken=57d7b62fa0765da809d3ea01689dbf37&id=hk_asam&type=dy
 澳视澳门,https://mgev.188766.xyz/?migutoken=b3aad395db5551638c0af2e0f1aa0ab9&id=hk_asam&type=dy
+澳视澳门,http://r.jdshipin.com/n2YZI
+澳视澳门,http://php.jdshipin.com:8880/TVOD/iptv.php?id=asam
+澳视澳门,https://cdn6.163189.xyz/163189/asam
 
 🇹🇼台湾频道,#genre#
