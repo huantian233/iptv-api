@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-01-26 18:41:37,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
+2026-01-27 06:36:46,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
 
 📺央视频道,#genre#
 CCTV-1,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
@@ -76,6 +76,7 @@ CCTV-15,https://migu.188766.xyz/?migutoken=c5dd95ca79ae41cd914dc2d900f02e86&id=C
 CCTV-15,https://migu.188766.xyz/?migutoken=3dba20a139ab937dc221f49028c5d9c2&id=CCTV15&type=yy
 CCTV-15,https://migu.188766.xyz/?migutoken=e668d9533bc5513b9f8c413c30bd8532&id=CCTV15&type=yy
 CCTV-15,https://migu.188766.xyz/?migutoken=1f8c8b8ab2b5ba8c84d821668729a3f2&id=CCTV15&type=yy
+CCTV-15,https://migu.188766.xyz/?migutoken=a87eddb243eabcf5edb6e65606259acf&id=CCTV15&type=yy
 CCTV-17,https://migu.188766.xyz/?migutoken=47b3ba758b3b90b539192c638bfc2d4c&id=CCTV17&type=yy
 CCTV-17,https://migu.188766.xyz/?migutoken=33b253caddb9f550c4d2231c1e829486&id=CCTV17&type=yy
 CCTV-17,https://migu.188766.xyz/?migutoken=7f08bddad1a617b620f5bc984b004aa8&id=CCTV17&type=yy
@@ -141,10 +142,12 @@ CETV-4,https://migu.188766.xyz/?migutoken=9011e7f7d02967526c13618ea9ad5c22&id=CE
 河南卫视,https://migu.188766.xyz/?migutoken=08e07168d00c07127e8c84a71aaea5f3&id=%E6%B2%B3%E5%8D%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85&type=yy
 河南卫视,https://migu.188766.xyz/?migutoken=05f4e70c78817b762dc8a3078e05ae03&id=%E6%B2%B3%E5%8D%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85&type=yy
 河南卫视,https://migu.188766.xyz/?migutoken=c6b78f1067e4b0d9e1e5705b4e9146bf&id=%E6%B2%B3%E5%8D%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85&type=yy
+河南卫视,https://migu.188766.xyz/?migutoken=4ea1f349fc2676ad3068d72b4bcfcb53&id=%E6%B2%B3%E5%8D%97%E5%8D%AB%E8%A7%86%E9%AB%98%E6%B8%85&type=yy
 吉林卫视,https://migu.188766.xyz/?migutoken=a9b0729208a419e095ffc2ed25883def&id=%E5%90%89%E6%9E%97%E5%8D%AB%E8%A7%86&type=yy
 吉林卫视,https://migu.188766.xyz/?migutoken=1d9728bd34fb699dc1cd15b383c98d26&id=%E5%90%89%E6%9E%97%E5%8D%AB%E8%A7%86&type=yy
 吉林卫视,https://migu.188766.xyz/?migutoken=63b95d9af73176381b8d9b0020931587&id=%E5%90%89%E6%9E%97%E5%8D%AB%E8%A7%86&type=yy
 吉林卫视,https://migu.188766.xyz/?migutoken=3062c46788caeb7e30a497314e68e574&id=%E5%90%89%E6%9E%97%E5%8D%AB%E8%A7%86&type=yy
+吉林卫视,https://migu.188766.xyz/?migutoken=0a5f3846c8a279080ef231ffec71bf47&id=%E5%90%89%E6%9E%97%E5%8D%AB%E8%A7%86&type=yy
 江苏卫视,https://migu.188766.xyz/?migutoken=a186f02ed2a8327dc3b7656a53d269b2&id=%E6%B1%9F%E8%8B%8F%E5%8D%AB%E8%A7%86&type=yy
 江苏卫视,https://migu.188766.xyz/?migutoken=689e04c996263da216269401212160f0&id=%E6%B1%9F%E8%8B%8F%E5%8D%AB%E8%A7%86&type=yy
 江苏卫视,http://iptv.huuc.edu.cn/hls/jshd.m3u8
@@ -164,6 +167,7 @@ CETV-4,https://migu.188766.xyz/?migutoken=9011e7f7d02967526c13618ea9ad5c22&id=CE
 内蒙古卫视,https://migu.188766.xyz/?migutoken=69dee5997d24647a92c53460f276e18a&id=%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%AB%E8%A7%86&pp=1
 内蒙古卫视,https://migu.188766.xyz/?migutoken=3c1c32013554943e72bc5007d91977cb&id=%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%AB%E8%A7%86&pp=1
 内蒙古卫视,https://migu.188766.xyz/?migutoken=a2e5090158d8e9be98a3d9119618b499&id=%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%AB%E8%A7%86&pp=1
+内蒙古卫视,https://migu.188766.xyz/?migutoken=f54938e1271124454e485bcf4606a9be&id=%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%AB%E8%A7%86&pp=1
 宁夏卫视,https://migu.188766.xyz/?migutoken=137f4e78cacb5ef502bea988b196c263&id=%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86&type=yy
 宁夏卫视,https://migu.188766.xyz/?migutoken=c1b525765766bf91497425194401f880&id=%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86&type=yy
 宁夏卫视,https://migu.188766.xyz/?migutoken=4f39a86719e2a9835f5e2a837070fea0&id=%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86&type=yy
@@ -177,6 +181,7 @@ CETV-4,https://migu.188766.xyz/?migutoken=9011e7f7d02967526c13618ea9ad5c22&id=CE
 陕西卫视,https://migu.188766.xyz/?migutoken=b38e4bc71141e97aaf75db608e065418&id=%E9%99%95%E8%A5%BF%E5%8D%AB%E8%A7%86&type=yy
 陕西卫视,https://migu.188766.xyz/?migutoken=ab71b12cf81a6b29e9db87930541b2de&id=%E9%99%95%E8%A5%BF%E5%8D%AB%E8%A7%86&type=yy
 陕西卫视,https://migu.188766.xyz/?migutoken=2a698f7357f97cec33ca7fc432c1b0dc&id=%E9%99%95%E8%A5%BF%E5%8D%AB%E8%A7%86&type=yy
+陕西卫视,https://migu.188766.xyz/?migutoken=3c408291be8dc77722c41891c60260e5&id=%E9%99%95%E8%A5%BF%E5%8D%AB%E8%A7%86&type=yy
 四川卫视,http://iptv.huuc.edu.cn/hls/schd.m3u8
 深圳卫视,https://migu.188766.xyz/?migutoken=48b4c4871acd1776560c40fb8a92dd09&id=%E6%B7%B1%E5%9C%B3%E5%8D%AB%E8%A7%86&pp=1
 深圳卫视,https://migu.188766.xyz/?migutoken=dda71ebf87d8546061be2316204d1f9a&id=%E6%B7%B1%E5%9C%B3%E5%8D%AB%E8%A7%86&pp=1
@@ -187,6 +192,7 @@ CETV-4,https://migu.188766.xyz/?migutoken=9011e7f7d02967526c13618ea9ad5c22&id=CE
 三沙卫视,https://migu.188766.xyz/?migutoken=f13db9067bee7786fba71efecd474d7b&id=hn_ssws&type=sz
 三沙卫视,https://migu.188766.xyz/?migutoken=7da7a3d5636d5f36547361ac11f23321&id=hn_ssws&type=sz
 三沙卫视,https://migu.188766.xyz/?migutoken=fb23d52270e19fb753507613bbc6c60e&id=hn_ssws&type=sz
+三沙卫视,https://migu.188766.xyz/?migutoken=816f53df693e62f4ea788c4b5a76bc44&id=hn_ssws&type=sz
 天津卫视,http://iptv.huuc.edu.cn/hls/tjhd.m3u8
 
 ☘️广东频道,#genre#
@@ -204,6 +210,7 @@ CETV-4,https://migu.188766.xyz/?migutoken=9011e7f7d02967526c13618ea9ad5c22&id=CE
 广东新闻,https://hk.188766.xyz/?migutoken=042c7b34ed8beac38ac371959ab78730&id=gd_gdxw&type=sz
 广东新闻,https://hk.188766.xyz/?migutoken=453bc47387acb78cb62e8598b864d78b&id=gd_gdxw&type=sz
 广东新闻,https://hk.188766.xyz/?migutoken=b3b4c7fab4569faa2517a1622e6c1650&id=gd_gdxw&type=sz
+广东新闻,https://hk.188766.xyz/?migutoken=965348d35335beb4244c46255c820ea8&id=gd_gdxw&type=sz
 广东卫视,https://migu.188766.xyz/?migutoken=cc879805fdfb63553cd05cd39cc54d1f&id=%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86&type=yy
 广东卫视,https://migu.188766.xyz/?migutoken=6df1bc70866b2d251bd6634ad26de1e2&id=%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86&type=yy
 广东卫视,http://iptv.huuc.edu.cn/hls/gdhd.m3u8
@@ -213,10 +220,12 @@ CETV-4,https://migu.188766.xyz/?migutoken=9011e7f7d02967526c13618ea9ad5c22&id=CE
 广东民生,https://hk.188766.xyz/?migutoken=c1418928cceffeb70b24829f01a2873e&id=gd_gdms&type=sz
 广东民生,https://hk.188766.xyz/?migutoken=10d0cba5b3fb0b91180188690acfdbfd&id=gd_gdms&type=sz
 广东民生,https://hk.188766.xyz/?migutoken=8391cbee7714652e22011effbfe54e9f&id=gd_gdms&type=sz
+广东民生,https://hk.188766.xyz/?migutoken=872e0af7041d965bb4514e12c07e3300&id=gd_gdms&type=sz
 大湾区卫视,https://migu.188766.xyz/?migutoken=0e8def20f9107695042dbfcff2695bfe&id=%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%86&type=yy
 大湾区卫视,https://migu.188766.xyz/?migutoken=cea4c2389d49c0f153e76b652a50fb04&id=%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%86&type=yy
 大湾区卫视,https://migu.188766.xyz/?migutoken=3be12ed462f52c88b960569849f57109&id=%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%86&type=yy
 大湾区卫视,https://migu.188766.xyz/?migutoken=760ffd10b90801f5b702e8a573e523f0&id=%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%86&type=yy
+大湾区卫视,https://migu.188766.xyz/?migutoken=a416bfd541830205a93deb08bfea4836&id=%E5%A4%A7%E6%B9%BE%E5%8C%BA%E5%8D%AB%E8%A7%86&type=yy
 广州综合,http://r.jdshipin.com/iR6Gq
 广州综合,http://r.jdshipin.com/snhya
 深圳卫视,https://migu.188766.xyz/?migutoken=48b4c4871acd1776560c40fb8a92dd09&id=%E6%B7%B1%E5%9C%B3%E5%8D%AB%E8%A7%86&pp=1
