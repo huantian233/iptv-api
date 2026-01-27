@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-01-27 06:36:46,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
+2026-01-27 18:45:28,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
 
 📺央视频道,#genre#
 CCTV-1,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
@@ -81,10 +81,12 @@ CCTV-17,https://migu.188766.xyz/?migutoken=47b3ba758b3b90b539192c638bfc2d4c&id=C
 CCTV-17,https://migu.188766.xyz/?migutoken=33b253caddb9f550c4d2231c1e829486&id=CCTV17&type=yy
 CCTV-17,https://migu.188766.xyz/?migutoken=7f08bddad1a617b620f5bc984b004aa8&id=CCTV17&type=yy
 CCTV-17,https://migu.188766.xyz/?migutoken=e4a0c966beea738f1e29989ec76e2cc2&id=CCTV17&type=yy
+CCTV-17,https://migu.188766.xyz/?migutoken=89fb95f6566da6916524f31bfbb11197&id=CCTV17&type=yy
 CETV-1,https://migu.188766.xyz/?migutoken=3a98303e29d887a72722cea95b06e998&id=CETV1&type=yy
 CETV-1,https://migu.188766.xyz/?migutoken=c42ff5ad98e4640ab2b583364e7691ff&id=CETV1&type=yy
 CETV-1,https://migu.188766.xyz/?migutoken=17db988ee1ff225e93a28d2b44203eb2&id=CETV1&type=yy
 CETV-1,https://migu.188766.xyz/?migutoken=adf4b92ffefd2c781390e3ec8b625527&id=CETV1&type=yy
+CETV-1,https://migu.188766.xyz/?migutoken=bdeae23eb363a931f9a411e252af259c&id=CETV1&type=yy
 CETV-2,https://migu.188766.xyz/?migutoken=040ac71bd6538c2707efaf601844b84c&id=CETV2&type=yy
 CETV-2,https://migu.188766.xyz/?migutoken=6058bd772ca8776edf91498cd18ff202&id=CETV2&type=yy
 CETV-2,https://migu.188766.xyz/?migutoken=abfa7e64d410c9bf2260fd7955bd4245&id=CETV2&type=yy
@@ -94,6 +96,7 @@ CETV-4,https://migu.188766.xyz/?migutoken=5c8ba41dfa4ffee0c48e0bfe6926afd4&id=CE
 CETV-4,https://migu.188766.xyz/?migutoken=37d2643839c6dab69155c1b2d8194f3c&id=CETV4&type=yy
 CETV-4,https://migu.188766.xyz/?migutoken=dc45439be55f170e7b1e37adca8e2b7f&id=CETV4&type=yy
 CETV-4,https://migu.188766.xyz/?migutoken=9011e7f7d02967526c13618ea9ad5c22&id=CETV4&type=yy
+CETV-4,https://migu.188766.xyz/?migutoken=2549ccd34502f74bb6cdf1e9bdcd09a8&id=CETV4&type=yy
 
 📡卫视频道,#genre#
 广东卫视,https://migu.188766.xyz/?migutoken=cc879805fdfb63553cd05cd39cc54d1f&id=%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86&type=yy
@@ -172,10 +175,12 @@ CETV-4,https://migu.188766.xyz/?migutoken=9011e7f7d02967526c13618ea9ad5c22&id=CE
 宁夏卫视,https://migu.188766.xyz/?migutoken=c1b525765766bf91497425194401f880&id=%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86&type=yy
 宁夏卫视,https://migu.188766.xyz/?migutoken=4f39a86719e2a9835f5e2a837070fea0&id=%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86&type=yy
 宁夏卫视,https://migu.188766.xyz/?migutoken=1a86db79cafeab6c15186569a72bfb98&id=%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86&type=yy
+宁夏卫视,https://migu.188766.xyz/?migutoken=1d3c06a463f5c1121886933974a55380&id=%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86&type=yy
 青海卫视,https://migu.188766.xyz/?migutoken=c1ad7569ec4417ba280f6f06092b08eb&id=%E9%9D%92%E6%B5%B7%E5%8D%AB%E8%A7%86&type=yy
 青海卫视,https://migu.188766.xyz/?migutoken=069f3fc2afd1cf179b8a8f4b4fe6fa42&id=%E9%9D%92%E6%B5%B7%E5%8D%AB%E8%A7%86&type=yy
 青海卫视,https://migu.188766.xyz/?migutoken=2e7db217fb561cc5ed325560d10395a5&id=%E9%9D%92%E6%B5%B7%E5%8D%AB%E8%A7%86&type=yy
 青海卫视,https://migu.188766.xyz/?migutoken=c866f629564ccbe3fe4224772b216c68&id=%E9%9D%92%E6%B5%B7%E5%8D%AB%E8%A7%86&type=yy
+青海卫视,https://migu.188766.xyz/?migutoken=95b5786474d83fa1c03fda1f7dcbd3ca&id=%E9%9D%92%E6%B5%B7%E5%8D%AB%E8%A7%86&type=yy
 山东卫视,http://iptv.huuc.edu.cn/hls/sdhd.m3u8
 陕西卫视,https://migu.188766.xyz/?migutoken=98546fc5626caa1293849859dda0c37e&id=%E9%99%95%E8%A5%BF%E5%8D%AB%E8%A7%86&type=yy
 陕西卫视,https://migu.188766.xyz/?migutoken=b38e4bc71141e97aaf75db608e065418&id=%E9%99%95%E8%A5%BF%E5%8D%AB%E8%A7%86&type=yy
