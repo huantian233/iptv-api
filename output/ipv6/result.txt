@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-02-16 06:39:14,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
+2026-02-16 19:02:59,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
 
 📺央视频道,#genre#
 CCTV-1,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
@@ -278,3 +278,4 @@ HOY TV,http://r.jdshipin.com/sFw4S
 澳视澳门,https://cdn6.163189.xyz/163189/asam
 
 🇹🇼台湾频道,#genre#
+纬来体育,https://epg.pw/stream/4f18dfe0593db5c686eb64ae8edaf2a9202d4d46bdc9bbde2cee27708e12ea01.m3u8
