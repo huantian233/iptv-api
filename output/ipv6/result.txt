@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-03-10 06:43:21,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
+2026-03-10 18:57:56,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
 
 📺央视频道,#genre#
 CCTV-1,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
@@ -125,6 +125,7 @@ CETV-4,https://migu.188766.xyz/?migutoken=2549ccd34502f74bb6cdf1e9bdcd09a8&id=CE
 湖北卫视,https://migu.188766.xyz/?migutoken=d3923a6854d71a1f3c22f63591cf3ae6&id=%E6%B9%96%E5%8C%97%E5%8D%AB%E8%A7%86&type=yy
 湖北卫视,https://migu.188766.xyz/?migutoken=79c8d898fddcddb9af3b0c399ed1d6c1&id=%E6%B9%96%E5%8C%97%E5%8D%AB%E8%A7%86&type=yy
 黑龙江卫视,http://iptv.huuc.edu.cn/hls/hljhd.m3u8
+黑龙江卫视,https://idclive.hljtv.com:4430/live/hljws_own.m3u8
 安徽卫视,http://iptv.huuc.edu.cn/hls/ahhd.m3u8
 重庆卫视,http://iptv.huuc.edu.cn/hls/cqhd.m3u8
 东方卫视,https://migu.188766.xyz/?migutoken=99001f9edc6283e2d317143d8b95ecd3&id=%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86&type=yy
