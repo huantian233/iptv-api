@@ -1,15 +1,15 @@
 🕘️更新时间,#genre#
-2026-04-26 18:56:46,http://112.27.235.94:8000/hls/1/index.m3u8
+2026-04-27 06:53:17,http://112.27.235.94:8000/hls/1/index.m3u8
 
 📺央视频道,#genre#
 CCTV-1,http://112.27.235.94:8000/hls/1/index.m3u8
 CCTV-2,http://38.75.136.137:98/gslb/dsdqbv/cctv2hd.m3u8?auth=test20251009
 CCTV-2,http://112.27.235.94:8000/hls/2/index.m3u8
 CCTV-3,http://39.152.103.17:8089/tsfile/live/1002_1.m3u8
-CCTV-3,http://112.27.235.94:8000/hls/3/index.m3u8
 CCTV-3,http://gmxw.7766.org:808/hls/91/index.m3u8
-CCTV-4,http://112.27.235.94:8000/hls/4/index.m3u8
+CCTV-3,http://112.27.235.94:8000/hls/3/index.m3u8
 CCTV-4,http://183.62.8.58:50085/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
+CCTV-4,http://112.27.235.94:8000/hls/4/index.m3u8
 CCTV-5,http://112.27.235.94:8000/hls/5/index.m3u8
 CCTV-5+,http://107.150.60.122/live/cctv5p.m3u8
 CCTV-5+,http://112.27.235.94:8000/hls/6/index.m3u8
@@ -49,13 +49,13 @@ CETV-2,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv2/50/20240709/ind
 广东卫视,http://101.35.240.114:88/live.php?id=广东卫视
 香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 香港卫视,http://101.35.240.114:88/live.php?id=香港卫视
-浙江卫视,http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
 浙江卫视,https://play-qukan.cztv.com/live/1746687519046362.m3u8
+浙江卫视,http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
 湖南卫视,http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
 湖南卫视,http://74.91.26.218:82/live/hnwshd.m3u8
 湖南卫视,http://112.27.235.94:8000/hls/31/index.m3u8
-北京卫视,http://23.237.228.134/live3/beijing.m3u8
 北京卫视,http://satellitepull.cnr.cn/live/wxbtv/playlist.m3u8
+北京卫视,http://23.237.228.134/live3/beijing.m3u8
 北京卫视,http://112.27.235.94:8000/hls/27/index.m3u8
 湖北卫视,http://107.150.60.122/live/hbwshd.m3u8
 湖北卫视,http://112.27.235.94:8000/hls/41/index.m3u8
@@ -63,9 +63,9 @@ CETV-2,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv2/50/20240709/ind
 安徽卫视,http://112.27.235.94:8000/hls/26/index.m3u8
 重庆卫视,http://107.150.60.122/live/cqwshd.m3u8
 重庆卫视,http://112.27.235.94:8000/hls/36/index.m3u8
-东方卫视,https://bp-resource-dfl.bestv.cn/148/3/video.m3u8
-东方卫视,http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 东方卫视,http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
+东方卫视,http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+东方卫视,https://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 东南卫视,http://36.32.174.67:60080/newlive/live/hls/33/live.m3u8
 东南卫视,http://112.27.235.94:8000/hls/38/index.m3u8
 甘肃卫视,http://111.61.236.247:9081/hls/54/index.m3u8
@@ -116,8 +116,8 @@ CETV-2,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv2/50/20240709/ind
 四川卫视,http://112.27.235.94:8000/hls/35/index.m3u8
 四川卫视,http://183.62.8.58:50085/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
 深圳卫视,http://38.64.72.148:80/hls/modn/list/4007/playlist.m3u8
-深圳卫视,http://112.27.235.94:8000/hls/33/index.m3u8
 深圳卫视,http://183.62.8.58:50085/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
+深圳卫视,http://112.27.235.94:8000/hls/33/index.m3u8
 三沙卫视,http://nn.7x9d.cn/地方台8563/海南.php?id=ssws
 三沙卫视,http://38.75.136.137:98/gslb/dsdqpub/ssws.m3u8?auth=testpub
 三沙卫视,https://srs.ssws.tv/video/sstv-10/index.m3u8
