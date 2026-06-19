@@ -4,7 +4,7 @@ import time
 
 sys.path.append(os.path.dirname(sys.path[0]))
 from flask import Flask, send_from_directory, make_response, request, jsonify, Response
-from utils.tools import get_result_file_content, resource_path, get_public_url
+from utils.tools import get_result_file_content, get_log_file_content, resource_path, get_public_url
 from utils.config import config
 import utils.constants as constants
 import atexit
@@ -151,50 +151,22 @@ def show_epg_gz():
 
 @app.route("/log/result")
 def show_result_log():
-    if os.path.exists(constants.result_log_path):
-        with open(constants.result_log_path, "r", encoding="utf-8") as file:
-            content = file.read()
-    else:
-        content = constants.waiting_tip
-    response = make_response(content)
-    response.mimetype = "text/plain"
-    return response
+    return get_log_file_content(constants.result_log_path)
 
 
 @app.route("/log/speed-test")
 def show_speed_log():
-    if os.path.exists(constants.speed_test_log_path):
-        with open(constants.speed_test_log_path, "r", encoding="utf-8") as file:
-            content = file.read()
-    else:
-        content = constants.waiting_tip
-    response = make_response(content)
-    response.mimetype = "text/plain"
-    return response
+    return get_log_file_content(constants.speed_test_log_path)
 
 
 @app.route("/log/statistic")
 def show_statistic_log():
-    if os.path.exists(constants.statistic_log_path):
-        with open(constants.statistic_log_path, "r", encoding="utf-8") as file:
-            content = file.read()
-    else:
-        content = constants.waiting_tip
-    response = make_response(content)
-    response.mimetype = "text/plain"
-    return response
+    return get_log_file_content(constants.statistic_log_path)
 
 
 @app.route("/log/nomatch")
 def show_nomatch_log():
-    if os.path.exists(constants.nomatch_log_path):
-        with open(constants.nomatch_log_path, "r", encoding="utf-8") as file:
-            content = file.read()
-    else:
-        content = constants.waiting_tip
-    response = make_response(content)
-    response.mimetype = "text/plain"
-    return response
+    return get_log_file_content(constants.nomatch_log_path)
 
 
 @app.route('/hls_proxy/<channel_id>', methods=['GET'])

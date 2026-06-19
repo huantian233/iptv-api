@@ -1,4 +1,3 @@
-import os
 import re
 import xml.etree.ElementTree as ET
 from collections import defaultdict
@@ -14,7 +13,7 @@ from utils.channel import format_channel_name
 from utils.config import config
 from utils.i18n import t
 from utils.retry import retry_func
-from utils.tools import get_pbar_remaining, get_urls_from_file, opencc_t2s, join_url
+from utils.tools import get_pbar_remaining, get_urls_from_file, opencc_t2s, map_urls_with_cdn
 
 
 def parse_epg(epg_content):
@@ -56,9 +55,7 @@ async def get_epg(names=None, callback=None):
     urls = get_urls_from_file(constants.epg_path)
     if not urls:
         return {}
-    if not os.getenv("GITHUB_ACTIONS") and config.cdn_url:
-        urls = [join_url(config.cdn_url, url) if "raw.githubusercontent.com" in url else url
-                for url in urls]
+    urls = map_urls_with_cdn(urls, config.cdn_url)
     urls_len = len(urls)
     pbar = tqdm_asyncio(
         total=urls_len,

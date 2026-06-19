@@ -1,4 +1,3 @@
-import os
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from logging import INFO
@@ -16,7 +15,7 @@ from utils.tools import (
     merge_objects,
     get_pbar_remaining,
     get_name_value,
-    get_logger, join_url
+    get_logger, map_urls_with_cdn
 )
 
 
@@ -32,12 +31,9 @@ async def get_channels_by_subscribe_urls(
     """
     Get the channels by subscribe urls
     """
-    if not os.getenv("GITHUB_ACTIONS") and config.cdn_url:
-        def _map_raw(u):
-            return join_url(config.cdn_url, u) if "raw.githubusercontent.com" in u else u
-
-        urls = [_map_raw(u) for u in urls]
-        whitelist = [_map_raw(u) for u in whitelist] if whitelist else None
+    urls = map_urls_with_cdn(urls, config.cdn_url)
+    if whitelist:
+        whitelist = map_urls_with_cdn(whitelist, config.cdn_url)
     if whitelist:
         index_map = {u: i for i, u in enumerate(whitelist)}
         urls.sort(key=lambda u: index_map.get(u, len(whitelist)))

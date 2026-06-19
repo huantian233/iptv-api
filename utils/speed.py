@@ -3,6 +3,7 @@ import http.cookies
 import json
 import re
 import subprocess
+from contextlib import asynccontextmanager
 from time import time
 from urllib.parse import quote, urljoin
 
@@ -37,6 +38,23 @@ default_ipv6_result = {
 }
 
 
+@asynccontextmanager
+async def _ensure_session(session: ClientSession = None):
+    """
+    Context manager that yields an aiohttp ClientSession.
+    If an existing session is provided, it is yielded as-is.
+    Otherwise a new session is created and closed on exit.
+    """
+    if session is not None:
+        yield session
+    else:
+        new_session = ClientSession(connector=TCPConnector(ssl=False), trust_env=True)
+        try:
+            yield new_session
+        finally:
+            await new_session.close()
+
+
 async def get_speed_with_download(url: str, headers: dict = None, session: ClientSession = None,
                                   timeout: int = speed_test_timeout) -> dict[
     str, float | None]:
@@ -46,31 +64,25 @@ async def get_speed_with_download(url: str, headers: dict = None, session: Clien
     start_time = time()
     delay = -1
     total_size = 0
-    if session is None:
-        session = ClientSession(connector=TCPConnector(ssl=False), trust_env=True)
-        created_session = True
-    else:
-        created_session = False
-    try:
-        async with session.get(url, headers=headers, timeout=timeout) as response:
-            if response.status != 200:
-                raise Exception("Invalid response")
-            delay = int(round((time() - start_time) * 1000))
-            async for chunk in response.content.iter_any():
-                if chunk:
-                    total_size += len(chunk)
-    except:
-        pass
-    finally:
-        total_time = time() - start_time
-        if created_session:
-            await session.close()
-        return {
-            'speed': total_size / total_time / 1024 / 1024,
-            'delay': delay,
-            'size': total_size,
-            'time': total_time,
-        }
+    async with _ensure_session(session) as sess:
+        try:
+            async with sess.get(url, headers=headers, timeout=timeout) as response:
+                if response.status != 200:
+                    raise Exception("Invalid response")
+                delay = int(round((time() - start_time) * 1000))
+                async for chunk in response.content.iter_any():
+                    if chunk:
+                        total_size += len(chunk)
+        except:
+            pass
+        finally:
+            total_time = time() - start_time
+            return {
+                'speed': total_size / total_time / 1024 / 1024,
+                'delay': delay,
+                'size': total_size,
+                'time': total_time,
+            }
 
 
 async def get_headers(url: str, headers: dict = None, session: ClientSession = None, timeout: int = 5) -> \
@@ -79,21 +91,15 @@ async def get_headers(url: str, headers: dict = None, session: ClientSession = N
     """
     Get the headers of the url
     """
-    if session is None:
-        session = ClientSession(connector=TCPConnector(ssl=False), trust_env=True)
-        created_session = True
-    else:
-        created_session = False
     res_headers = {}
-    try:
-        async with session.head(url, headers=headers, timeout=timeout) as response:
-            res_headers = response.headers
-    except:
-        pass
-    finally:
-        if created_session:
-            await session.close()
-        return res_headers
+    async with _ensure_session(session) as sess:
+        try:
+            async with sess.head(url, headers=headers, timeout=timeout) as response:
+                res_headers = response.headers
+        except:
+            pass
+        finally:
+            return res_headers
 
 
 async def get_url_content(url: str, headers: dict = None, session: ClientSession = None,
@@ -101,24 +107,18 @@ async def get_url_content(url: str, headers: dict = None, session: ClientSession
     """
     Get the content of the url
     """
-    if session is None:
-        session = ClientSession(connector=TCPConnector(ssl=False), trust_env=True)
-        created_session = True
-    else:
-        created_session = False
     content = ""
-    try:
-        async with session.get(url, headers=headers, timeout=timeout) as response:
-            if response.status == 200:
-                content = await response.text()
-            else:
-                raise Exception("Invalid response")
-    except:
-        pass
-    finally:
-        if created_session:
-            await session.close()
-        return content
+    async with _ensure_session(session) as sess:
+        try:
+            async with sess.get(url, headers=headers, timeout=timeout) as response:
+                if response.status == 200:
+                    content = await response.text()
+                else:
+                    raise Exception("Invalid response")
+        except:
+            pass
+        finally:
+            return content
 
 
 def check_m3u8_valid(headers: CIMultiDictProxy[str] | dict[any, any]) -> bool:

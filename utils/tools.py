@@ -5,7 +5,6 @@ import logging
 import os
 import re
 import shutil
-import sys
 from collections import defaultdict
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
@@ -20,7 +19,7 @@ from flask import send_file, make_response
 from opencc import OpenCC
 
 import utils.constants as constants
-from utils.config import config, resource_path
+from utils.config import config, resource_path, get_resolution_value
 from utils.i18n import t
 from utils.types import ChannelData
 
@@ -161,22 +160,6 @@ def get_soup(source):
     )
     soup = BeautifulSoup(source, "html.parser")
     return soup
-
-
-def get_resolution_value(resolution_str):
-    """
-    Get resolution value from string
-    """
-    try:
-        if resolution_str:
-            pattern = r"(\d+)[xX*](\d+)"
-            match = re.search(pattern, resolution_str)
-            if match:
-                width, height = map(int, match.groups())
-                return width * height
-    except:
-        pass
-    return 0
 
 
 def get_total_urls(info_list: list[ChannelData], ipv_type_prefer, origin_type_prefer, rtmp_type=None) -> list:
@@ -470,6 +453,21 @@ def get_result_file_content(path=None, show_content=False, file_type=None):
     return response
 
 
+def get_log_file_content(path: str):
+    """
+    Read a log file and return its content as a plain text response.
+    Falls back to a waiting tip if the file does not exist.
+    """
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as file:
+            content = file.read()
+    else:
+        content = constants.waiting_tip
+    response = make_response(content)
+    response.mimetype = "text/plain"
+    return response
+
+
 def remove_duplicates_from_list(data_list, seen, filter_host=False, ipv6_support=True):
     """
     Remove duplicates from data list
@@ -531,22 +529,6 @@ def remove_cache_info(string):
     Remove the cache info from the string
     """
     return re.sub(r"[.*]?\$?-?cache:.*", "", string)
-
-
-def resource_path(relative_path, persistent=False):
-    """
-    Get the resource path
-    """
-    base_path = os.path.abspath(".")
-    total_path = os.path.join(base_path, relative_path)
-    if persistent or os.path.exists(total_path):
-        return total_path
-    else:
-        try:
-            base_path = sys._MEIPASS
-            return os.path.join(base_path, relative_path)
-        except Exception:
-            return total_path
 
 
 def write_content_into_txt(content, path=None, position=None, callback=None):
@@ -756,6 +738,15 @@ def join_url(url1: str, url2: str) -> str:
     if not url1.endswith("/"):
         url1 += "/"
     return url1 + url2
+
+
+def map_urls_with_cdn(urls: list[str], cdn_url: str = None) -> list[str]:
+    """
+    Map raw.githubusercontent.com URLs through CDN proxy when not running in GitHub Actions.
+    """
+    if os.getenv("GITHUB_ACTIONS") or not cdn_url:
+        return urls
+    return [join_url(cdn_url, u) if "raw.githubusercontent.com" in u else u for u in urls]
 
 
 def add_port_to_url(url: str, port: int) -> str:

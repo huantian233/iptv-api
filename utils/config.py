@@ -26,13 +26,16 @@ def get_resolution_value(resolution_str):
     """
     Get resolution value from string
     """
-    pattern = r"(\d+)[xX*](\d+)"
-    match = re.search(pattern, resolution_str)
-    if match:
-        width, height = map(int, match.groups())
-        return width * height
-    else:
-        return 0
+    try:
+        if resolution_str:
+            pattern = r"(\d+)[xX*](\d+)"
+            match = re.search(pattern, resolution_str)
+            if match:
+                width, height = map(int, match.groups())
+                return width * height
+    except Exception:
+        pass
+    return 0
 
 
 class ConfigManager:
