@@ -202,7 +202,11 @@ def hls_proxy(channel_id):
     if not channel_id:
         return jsonify({t("name.error"): t("msg.error_channel_id_required")}), 400
 
-    channel_file = f'{channel_id}.m3u8'
+    safe_id = os.path.basename(channel_id)
+    if safe_id != channel_id or '..' in channel_id or '/' in channel_id or '\\' in channel_id:
+        return jsonify({t("name.error"): t("msg.error_channel_id_required")}), 400
+
+    channel_file = f'{safe_id}.m3u8'
     m3u8_path = os.path.join(hls_temp_path, channel_file)
 
     need_start = False

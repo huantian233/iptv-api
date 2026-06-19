@@ -2,6 +2,7 @@ import asyncio
 import copy
 import datetime
 import gzip
+import json
 import os
 import pickle
 from time import time
@@ -95,7 +96,11 @@ class UpdateSource:
             return {}
         try:
             with gzip.open(constants.cache_path, "rb") as f:
-                return pickle.load(f) or {}
+                raw = f.read()
+            try:
+                return json.loads(raw.decode("utf-8")) or {}
+            except (json.JSONDecodeError, UnicodeDecodeError):
+                return pickle.loads(raw) or {}
         except Exception:
             return {}
 
@@ -104,7 +109,7 @@ class UpdateSource:
         if cache_dir:
             os.makedirs(cache_dir, exist_ok=True)
         with gzip.open(constants.cache_path, "wb") as f:
-            pickle.dump(cache_result, f)
+            f.write(json.dumps(cache_result, ensure_ascii=False, default=str).encode("utf-8"))
 
     # ----------------------------
     # stage 1: prepare

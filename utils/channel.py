@@ -192,39 +192,43 @@ def get_channel_items(whitelist_maps, blacklist) -> CategoryChannelData:
         if os.path.exists(constants.cache_path):
             try:
                 with gzip.open(constants.cache_path, "rb") as file:
-                    old_result = pickle.load(file)
-                    for cate, data in channels.items():
-                        if cate in old_result:
-                            for name, info_list in data.items():
-                                urls = [
-                                    url
-                                    for item in info_list
-                                    if (url := item["url"])
-                                ]
-                                if name in old_result[cate]:
-                                    channel_data = channels[cate][name]
-                                    for info in old_result[cate][name]:
-                                        if info:
-                                            info_url = info["url"]
-                                            try:
-                                                if info["origin"] in retain_origin or check_url_by_keywords(info_url,
-                                                                                                            blacklist):
-                                                    continue
-                                                if check_channel_need_frozen(info):
-                                                    mark_url_bad(info_url, initial=True)
-                                                    continue
-                                            except:
-                                                pass
-                                            if info_url not in urls:
-                                                channel_data.append(info)
+                    raw = file.read()
+                try:
+                    old_result = json.loads(raw.decode("utf-8"))
+                except (json.JSONDecodeError, UnicodeDecodeError):
+                    old_result = pickle.loads(raw)
+                for cate, data in channels.items():
+                    if cate in old_result:
+                        for name, info_list in data.items():
+                            urls = [
+                                url
+                                for item in info_list
+                                if (url := item["url"])
+                            ]
+                            if name in old_result[cate]:
+                                channel_data = channels[cate][name]
+                                for info in old_result[cate][name]:
+                                    if info:
+                                        info_url = info["url"]
+                                        try:
+                                            if info["origin"] in retain_origin or check_url_by_keywords(info_url,
+                                                                                                        blacklist):
+                                                continue
+                                            if check_channel_need_frozen(info):
+                                                mark_url_bad(info_url, initial=True)
+                                                continue
+                                        except:
+                                            pass
+                                        if info_url not in urls:
+                                            channel_data.append(info)
 
-                                    if not channel_data:
-                                        for info in old_result[cate][name]:
-                                            old_result_url = info["url"]
-                                            if info and info[
-                                                "origin"] not in retain_origin and old_result_url not in urls and not check_url_by_keywords(
-                                                old_result_url, blacklist):
-                                                channel_data.append(info)
+                                if not channel_data:
+                                    for info in old_result[cate][name]:
+                                        old_result_url = info["url"]
+                                        if info and info[
+                                            "origin"] not in retain_origin and old_result_url not in urls and not check_url_by_keywords(
+                                            old_result_url, blacklist):
+                                            channel_data.append(info)
 
             except Exception as e:
                 print(t("msg.error_load_cache").format(info=e))

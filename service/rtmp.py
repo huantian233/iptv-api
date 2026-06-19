@@ -213,7 +213,7 @@ def start_rtmp_service():
     original_dir = os.getcwd()
     try:
         os.chdir(nginx_dir)
-        subprocess.Popen([nginx_path], shell=True)
+        subprocess.Popen([nginx_path])
     except Exception as e:
         print(t("msg.error_rtmp_service_start_failed").format(info=e))
     finally:
@@ -223,6 +223,6 @@ def start_rtmp_service():
 def stop_rtmp_service():
     try:
         os.chdir(nginx_dir)
-        subprocess.Popen([stop_path], shell=True)
+        subprocess.Popen([stop_path])
     except Exception as e:
         print(t("msg.error_rtmp_service_stop_failed").format(info=e))

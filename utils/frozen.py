@@ -1,4 +1,5 @@
 import gzip
+import json
 import os
 import pickle
 import time
@@ -73,11 +74,15 @@ def load(path: Optional[str]) -> None:
         return
     try:
         with gzip.open(path, "rb") as f:
-            data = pickle.load(f)
-            if isinstance(data, dict):
-                for k, v in data.items():
-                    if k not in _frozen:
-                        _frozen[k] = v
+            raw = f.read()
+        try:
+            data = json.loads(raw.decode("utf-8"))
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            data = pickle.loads(raw)
+        if isinstance(data, dict):
+            for k, v in data.items():
+                if k not in _frozen:
+                    _frozen[k] = v
     except Exception:
         pass
 
@@ -90,7 +95,7 @@ def save(path: Optional[str]) -> None:
         if dirp:
             os.makedirs(dirp, exist_ok=True)
         with gzip.open(path, "wb") as f:
-            pickle.dump(_frozen, f)
+            f.write(json.dumps(_frozen, ensure_ascii=False, default=str).encode("utf-8"))
     except Exception:
         pass
 
