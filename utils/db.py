@@ -1,5 +1,8 @@
+import logging
 import sqlite3
 from threading import Lock
+
+logger = logging.getLogger(__name__)
 
 
 class SQLitePool:
@@ -18,8 +21,8 @@ class SQLitePool:
             conn.execute("PRAGMA journal_mode=WAL;")
             conn.execute("PRAGMA synchronous=NORMAL;")
             conn.execute("PRAGMA busy_timeout = 30000;")
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning("Failed to set SQLite PRAGMAs for %s: %s", self.db_path, e)
         return conn
 
     def get_connection(self):
@@ -38,11 +41,12 @@ class SQLitePool:
                     self.pool.append(conn)
                 else:
                     conn.close()
-            except Exception:
+            except Exception as e:
+                logger.debug("Failed to return connection to pool for %s: %s", self.db_path, e)
                 try:
                     conn.close()
-                except Exception:
-                    pass
+                except Exception as e2:
+                    logger.debug("Failed to close connection for %s: %s", self.db_path, e2)
 
     def close_all(self):
         with self.lock:
@@ -50,8 +54,8 @@ class SQLitePool:
                 conn = self.pool.pop()
                 try:
                     conn.close()
-                except Exception:
-                    pass
+                except Exception as e:
+                    logger.debug("Failed to close connection during pool cleanup for %s: %s", self.db_path, e)
 
 
 db_pools = {}
