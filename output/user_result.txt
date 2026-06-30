@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-06-30 07:11:39,http://112.27.235.94:8000/hls/1/index.m3u8
+2026-06-30 20:22:45,http://112.27.235.94:8000/hls/1/index.m3u8
 
 📺央视频道,#genre#
 CCTV-1,http://112.27.235.94:8000/hls/1/index.m3u8
@@ -7,23 +7,23 @@ CCTV-1,http://112.46.85.60:8009/hls/501/index.m3u8
 CCTV-1,http://61.136.172.236:9901/tsfile/live/0001_1.m3u8
 CCTV-1,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
 CCTV-1,https://migu.188766.xyz/?migutoken=eb167d0a1fed80564989fe41f907cfa1&id=CCTV1&type=yy
-CCTV-2,http://112.27.235.94:8000/hls/2/index.m3u8
 CCTV-2,http://112.46.85.60:8009/hls/502/index.m3u8
+CCTV-2,http://112.27.235.94:8000/hls/2/index.m3u8
 CCTV-2,https://migu.188766.xyz/?migutoken=dfd11c9cdd8699404be2cf2060ff6a79&id=CCTV2&type=yy
 CCTV-2,https://migu.188766.xyz/?migutoken=ba2979513bfcf4f528346a6bd39d28cd&id=CCTV2&type=yy
 CCTV-2,http://iptv.huuc.edu.cn/hls/cctv2hd.m3u8
-CCTV-3,http://112.27.235.94:8000/hls/3/index.m3u8
-CCTV-3,http://112.46.85.60:8009/hls/3/index.m3u8
-CCTV-3,http://gmxw.7766.org:808/hls/91/index.m3u8
 CCTV-3,http://183.11.239.36:808/hls/91/index.m3u8
+CCTV-3,http://112.46.85.60:8009/hls/3/index.m3u8
+CCTV-3,http://112.27.235.94:8000/hls/3/index.m3u8
+CCTV-3,http://gmxw.7766.org:808/hls/91/index.m3u8
 CCTV-3,http://61.136.172.236:9901/tsfile/live/0003_1.m3u8
 CCTV-4,http://183.62.8.58:50085/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-4,https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 CCTV-4,http://112.27.235.94:8000/hls/4/index.m3u8
 CCTV-4,https://migu.188766.xyz/?migutoken=5845a07dac602027393a4442dbe52cba&id=CCTV4&type=yy
 CCTV-4,https://migu.188766.xyz/?migutoken=7ace76ad4baadc11c3bbb84e18bcbafa&id=CCTV4%E6%AC%A7%E6%B4%B2&type=yy
-CCTV-5,http://112.27.235.94:8000/hls/5/index.m3u8
 CCTV-5,http://112.46.85.60:8009/hls/503/index.m3u8
+CCTV-5,http://112.27.235.94:8000/hls/5/index.m3u8
 CCTV-5,http://183.11.239.36:808/hls/93/index.m3u8
 CCTV-5,https://migu.188766.xyz/?migutoken=6b4ba1e3a4778853bbc99fbe3789dc72&id=CCTV5&type=yy
 CCTV-5,https://migu.188766.xyz/?migutoken=0a93b0f8c10c8c3d4114daf993d3a1f5&id=CCTV5p&type=yy
@@ -39,12 +39,12 @@ CCTV-7,https://migu.188766.xyz/?migutoken=44e7ba029c2bad5c056bb495aba58317&id=CC
 CCTV-7,https://migu.188766.xyz/?migutoken=0b4deab092281894f3004a873742c63e&id=CCTV7&type=yy
 CCTV-7,http://iptv.huuc.edu.cn/hls/cctv7hd.m3u8
 CCTV-8,http://124.165.251.82:85/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
+CCTV-8,http://112.46.85.60:8009/hls/8/index.m3u8
 CCTV-8,http://112.27.235.94:8000/hls/9/index.m3u8
 CCTV-8,http://183.11.239.36:808/hls/96/index.m3u8
-CCTV-8,http://112.46.85.60:8009/hls/8/index.m3u8
 CCTV-8,https://migu.188766.xyz/?migutoken=ce74e8b074a1fdf4693c4d2e7a568453&id=CCTV8&type=yy
-CCTV-9,http://112.27.235.94:8000/hls/10/index.m3u8
 CCTV-9,http://182.150.23.74:808/hls/9/index.m3u8
+CCTV-9,http://112.27.235.94:8000/hls/10/index.m3u8
 CCTV-9,http://112.46.85.60:8009/hls/509/index.m3u8
 CCTV-9,https://migu.188766.xyz/?migutoken=82c847286a8a13d5aaeb14cef695b662&id=CCTV9&type=yy
 CCTV-9,https://migu.188766.xyz/?migutoken=bbbff28daaaff65ddb942d01d5ba1bed&id=CCTV9&type=yy
@@ -53,8 +53,8 @@ CCTV-10,http://61.136.172.236:9901/tsfile/live/0010_1.m3u8
 CCTV-10,https://migu.188766.xyz/?migutoken=8c000c282439f84b9c8d70f70461f3b9&id=CCTV10&type=yy
 CCTV-10,https://migu.188766.xyz/?migutoken=932c6be8bc52299701f04b2bd6e1a7ef&id=CCTV10&type=yy
 CCTV-10,http://iptv.huuc.edu.cn/hls/cctv10hd.m3u8
-CCTV-11,http://112.27.235.94:8000/hls/12/index.m3u8
 CCTV-11,http://182.150.23.74:808/hls/11/index.m3u8
+CCTV-11,http://112.27.235.94:8000/hls/12/index.m3u8
 CCTV-11,http://61.136.172.236:9901/tsfile/live/0011_1.m3u8
 CCTV-11,https://migu.188766.xyz/?migutoken=24305dea1bb29f2f635a98d44fe8af4e&id=CCTV11&type=yy
 CCTV-11,https://migu.188766.xyz/?migutoken=b7864809be33bab66196ebcea2ff71e0&id=CCTV11&type=yy
@@ -68,8 +68,8 @@ CCTV-13,https://migu.188766.xyz/?migutoken=dca0113015e8ae71845507946285505d&id=C
 CCTV-13,https://migu.188766.xyz/?migutoken=57405e8f0196834402f1f40bcd02ed36&id=CCTV13&type=yy
 CCTV-13,http://iptv.huuc.edu.cn/hls/cctv13hd.m3u8
 CCTV-13,https://migu.188766.xyz/?migutoken=3bf275f1634e96807e5cabee9aac15ba&id=CCTV13&type=yy
-CCTV-14,http://182.150.23.74:808/hls/14/index.m3u8
 CCTV-14,http://112.27.235.94:8000/hls/15/index.m3u8
+CCTV-14,http://182.150.23.74:808/hls/14/index.m3u8
 CCTV-14,http://61.136.172.236:9901/tsfile/live/0014_1.m3u8
 CCTV-14,https://migu.188766.xyz/?migutoken=7668c5e462675ab1cf9b81ce59c0a6d9&id=CCTV14&type=yy
 CCTV-14,https://migu.188766.xyz/?migutoken=a73010ac9791102dced9be5c84da927a&id=CCTV14&type=yy
@@ -140,8 +140,8 @@ CETV-4,https://migu.188766.xyz/?migutoken=2549ccd34502f74bb6cdf1e9bdcd09a8&id=CE
 重庆卫视,http://112.27.235.94:8000/hls/36/index.m3u8
 重庆卫视,http://61.136.172.236:9901/tsfile/live/0142_1.m3u8
 重庆卫视,http://iptv.huuc.edu.cn/hls/cqhd.m3u8
-东方卫视,http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 东方卫视,http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+东方卫视,http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 东方卫视,https://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 东方卫视,https://migu.188766.xyz/?migutoken=99001f9edc6283e2d317143d8b95ecd3&id=%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86&type=yy
 东方卫视,https://migu.188766.xyz/?migutoken=5de2dc7c57065a275b8019f629580622&id=%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86&type=yy
@@ -231,9 +231,9 @@ CETV-4,https://migu.188766.xyz/?migutoken=2549ccd34502f74bb6cdf1e9bdcd09a8&id=CE
 三沙卫视,https://srs.ssws.tv/video/sstv-10/index.m3u8
 三沙卫视,https://migu.188766.xyz/?migutoken=beb9aeaa31d41c3a8bff5e8f6e13a515&id=hn_ssws&type=sz
 三沙卫视,https://migu.188766.xyz/?migutoken=f13db9067bee7786fba71efecd474d7b&id=hn_ssws&type=sz
-天津卫视,http://182.150.23.74:808/hls/27/index.m3u8
 天津卫视,http://112.27.235.94:8000/hls/42/index.m3u8
 天津卫视,http://112.46.85.60:8009/hls/44/index.m3u8
+天津卫视,http://182.150.23.74:808/hls/27/index.m3u8
 天津卫视,http://iptv.huuc.edu.cn/hls/tjhd.m3u8
 西藏卫视,http://183.62.8.58:50085/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0
 西藏卫视,http://www.wmviv.com/iptv/bc2t.php?id=xzws
