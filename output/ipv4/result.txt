@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-07-17 19:31:44,http://112.27.235.94:8000/hls/1/index.m3u8
+2026-07-18 07:01:21,http://112.27.235.94:8000/hls/1/index.m3u8
 
 📺央视频道,#genre#
 CCTV-1,http://112.27.235.94:8000/hls/1/index.m3u8
@@ -19,9 +19,9 @@ CCTV-5,http://61.136.172.236:9901/tsfile/live/0005_1.m3u8
 CCTV-5+,http://112.27.235.94:8000/hls/6/index.m3u8
 CCTV-5+,http://61.136.172.236:9901/tsfile/live/0016_1.m3u8
 CCTV-6,http://112.27.235.94:8000/hls/7/index.m3u8
-CCTV-6,http://182.150.23.74:808/hls/6/index.m3u8
-CCTV-6,http://61.136.172.236:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-6,http://61.136.172.236:9901/tsfile/live/0006_1.m3u8
+CCTV-6,http://61.136.172.236:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
+CCTV-6,http://182.150.23.74:808/hls/6/index.m3u8
 CCTV-7,http://112.27.235.94:8000/hls/8/index.m3u8
 CCTV-8,http://124.165.251.82:85/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-8,http://112.27.235.94:8000/hls/9/index.m3u8
@@ -33,17 +33,17 @@ CCTV-10,http://61.136.172.236:9901/tsfile/live/0010_1.m3u8
 CCTV-11,http://112.27.235.94:8000/hls/12/index.m3u8
 CCTV-11,http://61.136.172.236:9901/tsfile/live/0011_1.m3u8
 CCTV-12,http://74.91.26.218:82/live/cctv12hd.m3u8
-CCTV-12,http://59.39.89.130:60901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
-CCTV-12,http://124.165.251.82:85/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
-CCTV-12,http://112.27.235.94:8000/hls/13/index.m3u8
 CCTV-12,http://222.223.41.27:8888/hls/12/index.m3u8
+CCTV-12,http://124.165.251.82:85/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
+CCTV-12,http://59.39.89.130:60901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
+CCTV-12,http://112.27.235.94:8000/hls/13/index.m3u8
 CCTV-13,http://112.27.235.94:8000/hls/14/index.m3u8
 CCTV-14,http://112.27.235.94:8000/hls/15/index.m3u8
 CCTV-14,http://61.136.172.236:9901/tsfile/live/0014_1.m3u8
 CCTV-15,http://112.27.235.94:8000/hls/16/index.m3u8
 CCTV-15,http://183.11.239.36:808/hls/102/index.m3u8
-CCTV-16,http://183.11.239.36:808/hls/169/index.m3u8
 CCTV-16,http://drive.mxmy.net:8888/udp/239.3.1.184:8001
+CCTV-16,http://183.11.239.36:808/hls/169/index.m3u8
 CCTV-17,http://drive.mxmy.net:8888/udp/239.3.1.151:8144
 CETV-1,http://120.76.248.139/live/bfgd/4200000135.m3u8
 CETV-2,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv2/50/20240709/index.m3u8?msisdn=202601140802499d512d62eaa74d1b80ee724fa99806db&mdspid=&spid=699004&netType=0&sid=5910022152&pid=2028597139&timestamp=20260114080249&Channel_ID=0116_2600037000-99000-200300220100002&ProgramID=923287211&ParentNodeID=-99&assertID=5910022152&client_ip=218.28.233.106&SecurityKey=20260114080249&promotionId=&mvid=5900006638&mcid=500020&playurlVersion=WX-A1-8.12.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=b9d246dd5c12d10834cf46710ab76f30&sv=10004&ct=android
@@ -73,8 +73,8 @@ CETV-2,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv2/50/20240709/ind
 重庆卫视,http://112.27.235.94:8000/hls/36/index.m3u8
 重庆卫视,http://61.136.172.236:9901/tsfile/live/0142_1.m3u8
 东方卫视,http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
-东方卫视,http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 东方卫视,https://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+东方卫视,http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 东南卫视,http://112.27.235.94:8000/hls/38/index.m3u8
 东南卫视,http://61.136.172.236:9901/tsfile/live/0137_1.m3u8
 甘肃卫视,http://183.11.239.36:808/hls/119/index.m3u8
@@ -159,8 +159,8 @@ CETV-2,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv2/50/20240709/ind
 广东民生,http://119.32.12.17:2901/udp/224.1.100.4:11111
 广东民生,http://183.11.239.36:808/hls/18/index.m3u8
 大湾区卫视,http://222.128.55.152:9080/live/dwq.m3u8
-广州综合,https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488
 广州综合,https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487
+广州综合,https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488
 广州影视,http://tencentplay.gztv.com/live/yingshi.m3u8?txSecret=1bd3a1082ab5b89f48c1bff9a3760da4&txTime=18d57929bd4
 广州竞赛,http://8.138.7.223/tv/gzjs.m3u8
 深圳卫视,http://183.62.8.58:50085/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
