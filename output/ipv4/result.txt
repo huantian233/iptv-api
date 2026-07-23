@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-07-23 20:01:38,http://112.27.235.94:8000/hls/1/index.m3u8
+2026-07-24 07:10:03,http://112.27.235.94:8000/hls/1/index.m3u8
 
 📺央视频道,#genre#
 CCTV-1,http://112.27.235.94:8000/hls/1/index.m3u8
@@ -10,13 +10,13 @@ CCTV-3,http://121.57.88.206:898/hls/3/index.m3u8
 CCTV-3,http://112.27.235.94:8000/hls/3/index.m3u8
 CCTV-3,http://gmxw.7766.org:808/hls/91/index.m3u8
 CCTV-3,http://61.136.172.236:9901/tsfile/live/0003_1.m3u8
-CCTV-4,https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 CCTV-4,http://183.62.8.58:50085/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
+CCTV-4,https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 CCTV-4,http://112.27.235.94:8000/hls/4/index.m3u8
 CCTV-5,http://112.27.235.94:8000/hls/5/index.m3u8
 CCTV-5,http://61.136.172.236:9901/tsfile/live/0005_1.m3u8
-CCTV-5+,http://112.27.235.94:8000/hls/6/index.m3u8
 CCTV-5+,http://153.0.171.163:85/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=0
+CCTV-5+,http://112.27.235.94:8000/hls/6/index.m3u8
 CCTV-5+,http://61.136.172.236:9901/tsfile/live/0016_1.m3u8
 CCTV-6,http://112.27.235.94:8000/hls/7/index.m3u8
 CCTV-6,http://182.150.23.74:808/hls/6/index.m3u8
@@ -42,9 +42,8 @@ CCTV-14,http://112.27.235.94:8000/hls/15/index.m3u8
 CCTV-14,http://61.136.172.236:9901/tsfile/live/0014_1.m3u8
 CCTV-15,http://112.27.235.94:8000/hls/16/index.m3u8
 CCTV-15,http://183.11.239.36:808/hls/102/index.m3u8
-CCTV-15,http://101.66.194.150:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0
-CCTV-16,http://drive.mxmy.net:8888/udp/239.3.1.184:8001
 CCTV-16,http://183.11.239.36:808/hls/169/index.m3u8
+CCTV-16,http://drive.mxmy.net:8888/udp/239.3.1.184:8001
 CCTV-17,http://drive.mxmy.net:8888/udp/239.3.1.151:8144
 CETV-1,http://120.76.248.139/live/bfgd/4200000135.m3u8
 CETV-2,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv2/50/20240709/index.m3u8?msisdn=202601140802499d512d62eaa74d1b80ee724fa99806db&mdspid=&spid=699004&netType=0&sid=5910022152&pid=2028597139&timestamp=20260114080249&Channel_ID=0116_2600037000-99000-200300220100002&ProgramID=923287211&ParentNodeID=-99&assertID=5910022152&client_ip=218.28.233.106&SecurityKey=20260114080249&promotionId=&mvid=5900006638&mcid=500020&playurlVersion=WX-A1-8.12.2-RELEASE&userid=&jmhm=&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=b9d246dd5c12d10834cf46710ab76f30&sv=10004&ct=android
@@ -69,13 +68,13 @@ CETV-2,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv2/50/20240709/ind
 黑龙江卫视,http://112.27.235.94:8000/hls/48/index.m3u8
 黑龙江卫视,http://183.11.239.36:808/hls/48/index.m3u8
 安徽卫视,http://112.27.235.94:8000/hls/26/index.m3u8
-安徽卫视,http://183.11.239.36:808/hls/40/index.m3u8
 安徽卫视,http://61.136.172.236:9901/tsfile/live/0130_1.m3u8
+安徽卫视,http://183.11.239.36:808/hls/40/index.m3u8
 重庆卫视,http://112.27.235.94:8000/hls/36/index.m3u8
 重庆卫视,http://61.136.172.236:9901/tsfile/live/0142_1.m3u8
-东方卫视,http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 东方卫视,http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 东方卫视,https://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+东方卫视,http://bp-resource-dfl.bestv.cn/155/3/video.m3u8
 东南卫视,http://112.27.235.94:8000/hls/38/index.m3u8
 东南卫视,http://61.136.172.236:9901/tsfile/live/0137_1.m3u8
 甘肃卫视,http://183.11.239.36:808/hls/119/index.m3u8
