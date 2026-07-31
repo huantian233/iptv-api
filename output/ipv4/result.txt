@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-07-31 20:12:04,http://112.27.235.94:8000/hls/1/index.m3u8
+2026-08-01 07:15:59,http://112.27.235.94:8000/hls/1/index.m3u8
 
 📺央视频道,#genre#
 CCTV-1,http://112.27.235.94:8000/hls/1/index.m3u8
@@ -7,24 +7,21 @@ CCTV-1,http://61.136.172.236:9901/tsfile/live/0001_1.m3u8
 CCTV-2,http://112.27.235.94:8000/hls/2/index.m3u8
 CCTV-2,http://61.136.172.236:9901/tsfile/live/0002_1.m3u8
 CCTV-2,http://118.193.115.2:9901/tsfile/live/0002_1.m3u8?key=txiptv
-CCTV-2,http://183.223.157.33:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-3,http://74.91.26.218:82/live/cctv3hd.m3u8
 CCTV-3,http://121.57.88.206:898/hls/3/index.m3u8
 CCTV-3,http://112.27.235.94:8000/hls/3/index.m3u8
 CCTV-3,http://61.136.172.236:9901/tsfile/live/0003_1.m3u8
+CCTV-4,http://183.62.8.58:50085/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-4,https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 CCTV-4,http://112.27.235.94:8000/hls/4/index.m3u8
-CCTV-4,http://183.62.8.58:50085/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-5,http://112.27.235.94:8000/hls/5/index.m3u8
 CCTV-5,http://61.136.172.236:9901/tsfile/live/0005_1.m3u8
 CCTV-5+,http://153.0.171.163:85/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&authid=0
-CCTV-5+,http://183.223.157.33:9901/tsfile/live/0018_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-5+,http://112.27.235.94:8000/hls/6/index.m3u8
 CCTV-5+,http://61.136.172.236:9901/tsfile/live/0016_1.m3u8
 CCTV-6,http://112.27.235.94:8000/hls/7/index.m3u8
 CCTV-6,http://61.136.172.236:9901/tsfile/live/0006_1.m3u8
 CCTV-6,http://61.136.172.236:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
-CCTV-7,http://183.223.157.33:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-7,http://112.27.235.94:8000/hls/8/index.m3u8
 CCTV-8,http://124.165.251.82:85/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-8,http://112.27.235.94:8000/hls/9/index.m3u8
@@ -121,13 +118,13 @@ CETV-2,http://hlsztemgsplive.miguvideo.com:8080/migu/kailu/cetv2/50/20240709/ind
 山西卫视,http://119.39.9.8:9901/tsfile/live/0118_1.m3u8
 陕西卫视,https://live.264788.xyz/channel/shaanxiweishi?streamid=9dc887dba8ecb4e4143baf4f2373800c&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 陕西卫视,http://112.27.235.94:8000/hls/43/index.m3u8
-四川卫视,https://live.264788.xyz/channel/sichuanweishi4k?streamid=401bf692a1a8b91298f26077d53316d6&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 四川卫视,https://live.264788.xyz/channel/sichuanweishi4k?streamid=21be5901ee81559c827dc84e46f26452&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
+四川卫视,https://live.264788.xyz/channel/sichuanweishi4k?streamid=401bf692a1a8b91298f26077d53316d6&livekey=01WgOR41rriMmMkzNsd0UoaxJRwetZdxIvtVk
 四川卫视,http://112.27.235.94:8000/hls/35/index.m3u8
 四川卫视,http://61.136.172.236:9901/tsfile/live/0123_1.m3u8
 深圳卫视,http://38.64.72.148:80/hls/modn/list/4007/playlist.m3u8
-深圳卫视,http://59.39.89.130:60901/tsfile/live/0125_11.m3u8?key=txiptv&playlive=1&authid=0
 深圳卫视,http://112.27.235.94:8000/hls/33/index.m3u8
+深圳卫视,http://59.39.89.130:60901/tsfile/live/0125_11.m3u8?key=txiptv&playlive=1&authid=0
 深圳卫视,http://183.11.239.36:808/hls/45/index.m3u8
 深圳卫视,http://61.136.172.236:9901/tsfile/live/0126_1.m3u8
 三沙卫视,http://221.226.51.220:50081/newlive/live/hls/38/live.m3u8
