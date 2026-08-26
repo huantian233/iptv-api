@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-08-26 06:45:29,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
+2026-08-26 18:54:10,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
 
 📺央视频道,#genre#
 CCTV-1,https://migu.188766.xyz/?migutoken=47f47dd31d5a406fee52c83c4b3fce20&id=CCTV1&type=yy
@@ -139,6 +139,7 @@ CETV-4,https://migu.188766.xyz/?migutoken=2549ccd34502f74bb6cdf1e9bdcd09a8&id=CE
 甘肃卫视,http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
 广西卫视,https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8
 广西卫视,https://hlscdn.liangtv.cn/live/0c4ef3a44b934cacb8b47121dfada66c/d7e04258157b480dae53883cc6f8123b.m3u8
+广西卫视,https://gd202.tv1288.xyz/tsfile/live/1028_1.m3u8
 海南卫视,https://migu.188766.xyz/?migutoken=a870cd62f3e8175780856b1c3ecb5a19&id=hn_hnws&type=sz
 海南卫视,https://migu.188766.xyz/?migutoken=28e1e9517a7c18f2d4ec77d831038d18&id=%E6%B5%B7%E5%8D%97%E5%8D%AB%E8%A7%86&type=yy
 海南卫视,https://migu.188766.xyz/?migutoken=fdf5f9e8206a392e500eb78425708837&id=hn_hnws&type=sz
