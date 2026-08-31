@@ -18,7 +18,7 @@ def resource_path(relative_path, persistent=False):
         try:
             base_path = sys._MEIPASS
             return os.path.join(base_path, relative_path)
-        except Exception:
+        except AttributeError:
             return total_path
 
 
@@ -329,8 +329,9 @@ class ConfigManager:
                 s.close()
             if ip and not ip.startswith("127."):
                 return ip
-        except Exception:
-            pass
+        except Exception as e:
+            import logging
+            logging.getLogger(__name__).debug("Failed to detect local IP: %s", e)
         return cfg
 
     @property

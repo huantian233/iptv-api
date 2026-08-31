@@ -24,6 +24,7 @@ from utils.config import config, resource_path
 from utils.i18n import t
 from utils.types import ChannelData
 
+logger = logging.getLogger(__name__)
 opencc_t2s = OpenCC("t2s")
 
 
@@ -42,17 +43,17 @@ def get_logger(path, level=logging.ERROR, init=False):
             try:
                 logger.removeHandler(h)
                 h.close()
-            except Exception:
-                pass
+            except Exception as e:
+                logger.debug("Failed to close log handler for %s: %s", path, e)
 
         if os.path.exists(path):
             try:
                 with open(path, "w", encoding="utf-8"):
                     pass
             except PermissionError:
-                pass
-            except Exception:
-                pass
+                logger.debug("Permission denied when truncating log file: %s", path)
+            except Exception as e:
+                logger.debug("Failed to truncate log file %s: %s", path, e)
 
     handler = RotatingFileHandler(path, encoding="utf-8", delay=True)
 
@@ -103,7 +104,8 @@ def get_pbar_remaining(n=0, total=0, start_time=None):
             remaining_time = "未知"
         return remaining_time
     except Exception as e:
-        print(f"Error: {e}")
+        logger.warning("Failed to calculate progress bar remaining time: %s", e)
+        return "unknown"
 
 
 def update_file(final_file, old_file, copy=False):
@@ -174,8 +176,8 @@ def get_resolution_value(resolution_str):
             if match:
                 width, height = map(int, match.groups())
                 return width * height
-    except:
-        pass
+    except (ValueError, TypeError) as e:
+        logger.debug("Failed to parse resolution value from '%s': %s", resolution_str, e)
     return 0
 
 
@@ -272,8 +274,8 @@ def check_ipv6_support():
         if response.status_code == 200:
             print(t("msg.ipv6_supported"))
             return True
-    except Exception:
-        pass
+    except Exception as e:
+        logger.debug("IPv6 support check failed: %s", e)
     print(t("msg.ipv6_not_supported"))
     return False
 
@@ -409,7 +411,8 @@ def convert_to_m3u(path=None, first_channel_name=None, data=None):
                             original_channel_name, _, channel_link = map(
                                 str.strip, trimmed_line.partition(",")
                             )
-                        except:
+                        except (ValueError, TypeError) as e:
+                            logger.debug("Failed to parse line in m3u conversion: %s", e)
                             continue
                         use_name = first_channel_name if current_group in (t("content.update_time"),
                                                                            t("content.update_running")) else original_channel_name
@@ -545,7 +548,7 @@ def resource_path(relative_path, persistent=False):
         try:
             base_path = sys._MEIPASS
             return os.path.join(base_path, relative_path)
-        except Exception:
+        except AttributeError:
             return total_path
 
 
@@ -681,7 +684,8 @@ def get_name_urls_from_file(path: str | list, format_name_flag: bool = False) ->
         try:
             with open(real_path, "r", encoding="utf-8") as f:
                 content = f.read()
-        except Exception:
+        except Exception as e:
+            logger.debug("Failed to read file %s: %s", real_path, e)
             continue
 
         filename = os.path.basename(real_path)
@@ -861,7 +865,8 @@ def parse_times(times_str: str):
             h = int(hh_mm[0])
             m = int(hh_mm[1]) if len(hh_mm) > 1 else 0
             times.append((h, m))
-        except Exception:
+        except (ValueError, IndexError) as e:
+            logger.debug("Failed to parse time entry '%s': %s", part, e)
             continue
     return times
 

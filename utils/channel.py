@@ -1,6 +1,7 @@
 import asyncio
 import gzip
 import json
+import logging
 import math
 import os
 import pickle
@@ -43,6 +44,7 @@ from utils.tools import (
 from utils.types import ChannelData, OriginType, CategoryChannelData, WhitelistMaps
 from utils.whitelist import is_url_whitelisted, get_whitelist_url, get_whitelist_total_count
 
+logger = logging.getLogger(__name__)
 channel_alias = Alias()
 ip_checker = IPChecker()
 location_list = config.location
@@ -213,8 +215,8 @@ def get_channel_items(whitelist_maps, blacklist) -> CategoryChannelData:
                                                 if check_channel_need_frozen(info):
                                                     mark_url_bad(info_url, initial=True)
                                                     continue
-                                            except:
-                                                pass
+                                            except Exception as e:
+                                                logger.debug("Failed to check frozen status for %s: %s", info_url, e)
                                             if info_url not in urls:
                                                 channel_data.append(info)
 
@@ -227,8 +229,8 @@ def get_channel_items(whitelist_maps, blacklist) -> CategoryChannelData:
                                                 channel_data.append(info)
 
             except Exception as e:
+                logger.warning("Failed to load cache: %s", e)
                 print(t("msg.error_load_cache").format(info=e))
-                pass
     return channels
 
 
@@ -500,7 +502,8 @@ async def test_speed(data, ipv6=False, callback=None, on_task_complete=None):
         nonlocal completed
         try:
             result = task.result()
-        except Exception:
+        except Exception as e:
+            logger.debug("Speed test task failed: %s", e)
             result = {}
         meta = channel_map.get(task)
         if not meta:
@@ -527,8 +530,8 @@ async def test_speed(data, ipv6=False, callback=None, on_task_complete=None):
         if on_task_complete:
             try:
                 on_task_complete(cate, name, merged, is_channel_last, is_last)
-            except Exception:
-                pass
+            except Exception as e:
+                logger.warning("on_task_complete callback failed for %s/%s: %s", cate, name, e)
 
     for cate, channel_obj in data.items():
         for name, info_list in channel_obj.items():
@@ -703,10 +706,10 @@ def process_write_content(
         os.replace(tmp_path, path)
         try:
             os.chmod(path, 0o644)
-        except Exception:
-            pass
+        except OSError as e:
+            logger.debug("Failed to set file permissions for %s: %s", path, e)
     except Exception as e:
-        print(e)
+        logger.warning("Atomic file write failed for %s, falling back to direct write: %s", path, e)
         try:
             with open(path, "w", encoding="utf-8") as f:
                 f.write(content)
@@ -715,8 +718,8 @@ def process_write_content(
             return
     try:
         convert_to_m3u(path, first_channel_name, data=result_data)
-    except Exception:
-        pass
+    except Exception as e:
+        logger.warning("Failed to convert %s to m3u format: %s", path, e)
 
 
 def write_channel_to_file(data, ipv6=False, first_channel_name=None, skip_print=False, is_last=False):

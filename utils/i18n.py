@@ -1,8 +1,11 @@
 import json
+import logging
 import os
 from typing import Dict
 
 from utils.config import config, resource_path
+
+logger = logging.getLogger(__name__)
 
 _LOCALES_CACHE: Dict[str, Dict[str, str]] = {}
 _CURRENT_LANG = None
@@ -24,7 +27,8 @@ def _load_locale(lang: str) -> Dict[str, str]:
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-    except Exception:
+    except Exception as e:
+        logger.warning("Failed to load locale file %s: %s", file_path, e)
         data = {}
 
     _LOCALES_CACHE[lang] = data

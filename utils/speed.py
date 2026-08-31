@@ -1,6 +1,7 @@
 import asyncio
 import http.cookies
 import json
+import logging
 import re
 import subprocess
 from time import time
@@ -16,6 +17,8 @@ from utils.i18n import t
 from utils.requests.tools import headers as request_headers
 from utils.tools import get_resolution_value
 from utils.types import TestResult, ChannelTestResult, TestResultCacheData
+
+logger = logging.getLogger(__name__)
 
 http.cookies._is_legal_key = lambda _: True
 cache: TestResultCacheData = {}
@@ -59,8 +62,8 @@ async def get_speed_with_download(url: str, headers: dict = None, session: Clien
             async for chunk in response.content.iter_any():
                 if chunk:
                     total_size += len(chunk)
-    except:
-        pass
+    except Exception as e:
+        logger.debug("Download speed test failed for %s: %s", url, e)
     finally:
         total_time = time() - start_time
         if created_session:
@@ -88,8 +91,8 @@ async def get_headers(url: str, headers: dict = None, session: ClientSession = N
     try:
         async with session.head(url, headers=headers, timeout=timeout) as response:
             res_headers = response.headers
-    except:
-        pass
+    except Exception as e:
+        logger.debug("Failed to get headers for %s: %s", url, e)
     finally:
         if created_session:
             await session.close()
@@ -113,8 +116,8 @@ async def get_url_content(url: str, headers: dict = None, session: ClientSession
                 content = await response.text()
             else:
                 raise Exception("Invalid response")
-    except:
-        pass
+    except Exception as e:
+        logger.debug("Failed to get content for %s: %s", url, e)
     finally:
         if created_session:
             await session.close()
@@ -145,7 +148,8 @@ def _parse_time_to_seconds(t: str) -> float:
         for i, part in enumerate(reversed(parts)):
             total += float(part) * (60 ** i)
         return total
-    except Exception:
+    except (ValueError, TypeError) as e:
+        logger.debug("Failed to parse time string: %s", e)
         return 0.0
 
 
@@ -157,7 +161,7 @@ def _try_extract_speed_from_ffmpeg_output(output: str) -> float | None:
     def parse_size_value(value_str: str, unit: str | None) -> float:
         try:
             val = float(value_str)
-        except Exception:
+        except (ValueError, TypeError):
             return 0.0
         if not unit:
             return val
@@ -186,8 +190,8 @@ def _try_extract_speed_from_ffmpeg_output(output: str) -> float | None:
             secs = _parse_time_to_seconds(m_time.group(1))
             if secs > 0:
                 return total_bytes / secs / 1024.0 / 1024.0
-    except Exception:
-        pass
+    except (ValueError, TypeError, AttributeError) as e:
+        logger.debug("Failed to extract speed from video/audio sizes: %s", e)
 
     try:
         m_lsize = re.search(r"Lsize=\s*([0-9]+(?:\.[0-9]+)?)\s*(KiB|kB|MiB|B|kb|KB)?", output, re.IGNORECASE)
@@ -202,16 +206,16 @@ def _try_extract_speed_from_ffmpeg_output(output: str) -> float | None:
             secs = _parse_time_to_seconds(m_time.group(1))
             if secs > 0:
                 return size_bytes / secs / 1024.0 / 1024.0
-    except Exception:
-        pass
+    except (ValueError, TypeError, AttributeError) as e:
+        logger.debug("Failed to extract speed from Lsize/size: %s", e)
 
     try:
         m_bitrate = re.search(r"bitrate=\s*([0-9\.]+)\s*k?bits/s", output)
         if m_bitrate:
             kbps = float(m_bitrate.group(1))
             return kbps / 8.0 / 1024.0
-    except Exception:
-        pass
+    except (ValueError, TypeError, AttributeError) as e:
+        logger.debug("Failed to extract speed from bitrate: %s", e)
 
     return None
 
@@ -269,12 +273,12 @@ async def get_result(url: str, headers: dict = None, resolution: str = None,
                                 _, parsed_resolution = get_video_info(ff_out)
                                 if parsed_resolution:
                                     info['resolution'] = parsed_resolution
-                            except Exception:
-                                pass
-                except Exception:
-                    pass
-    except:
-        pass
+                            except Exception as e:
+                                logger.debug("Failed to parse video info from ffmpeg output: %s", e)
+                except Exception as e:
+                    logger.debug("Failed ffmpeg fallback speed test for %s: %s", url, e)
+    except Exception as e:
+        logger.debug("Speed test failed for %s: %s", url, e)
     finally:
         if not info['resolution'] and filter_resolution and not location and info['delay'] != -1:
             info['resolution'] = await get_resolution_ffprobe(url, headers, timeout)
@@ -300,6 +304,7 @@ async def get_delay_requests(url, timeout=speed_test_timeout, proxy=None):
                 else:
                     return -1
         except Exception as e:
+            logger.debug("Delay request failed for %s: %s", url, e)
             return -1
         return int(round((end - start) * 1000)) if end else -1
 
@@ -352,7 +357,8 @@ async def ffmpeg_url(url, headers=None, timeout=10):
         if proc:
             proc.kill()
         return None
-    except Exception:
+    except Exception as e:
+        logger.debug("ffmpeg execution failed for %s: %s", url, e)
         if proc:
             proc.kill()
         return None
@@ -382,7 +388,8 @@ async def get_resolution_ffprobe(url: str, headers: dict = None, timeout: int = 
         out, _ = await asyncio.wait_for(proc.communicate(), timeout)
         video_stream = json.loads(out.decode('utf-8'))["streams"][0]
         resolution = f"{video_stream['width']}x{video_stream['height']}"
-    except:
+    except Exception as e:
+        logger.debug("ffprobe resolution detection failed for %s: %s", url, e)
         if proc:
             proc.kill()
     finally:

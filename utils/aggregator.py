@@ -1,5 +1,6 @@
 import asyncio
 import copy
+import logging
 from collections import defaultdict
 from logging import INFO
 from typing import Any, Dict, Optional, Set, Tuple
@@ -8,6 +9,8 @@ import utils.constants as constants
 from utils.channel import sort_channel_result, generate_channel_statistic, write_channel_to_file, retain_origin
 from utils.config import config
 from utils.tools import get_logger
+
+logger = logging.getLogger(__name__)
 
 
 class ResultAggregator:
@@ -55,11 +58,12 @@ class ResultAggregator:
         if not self._debounce_task or self._debounce_task.done():
             try:
                 self._debounce_task = loop.create_task(self._debounce_loop())
-            except Exception:
+            except Exception as e:
+                logger.debug("Failed to create debounce task directly: %s", e)
                 try:
                     loop.call_soon_threadsafe(self._create_debounce_task_threadsafe)
-                except Exception:
-                    pass
+                except Exception as e2:
+                    logger.warning("Failed to schedule debounce task via call_soon_threadsafe: %s", e2)
 
     def _create_debounce_task_threadsafe(self) -> None:
         """
@@ -88,14 +92,14 @@ class ResultAggregator:
                 f"Date: {item.get('date')}, Delay: {item.get('delay') or -1} ms, "
                 f"Speed: {(item.get('speed') or 0):.2f} M/s, Resolution: {item.get('resolution')}"
             )
-        except Exception:
-            pass
+        except Exception as e:
+            logger.debug("Failed to log sort result for %s: %s", name, e)
 
         if is_channel_last:
             try:
                 generate_channel_statistic(self.stat_logger, cate, name, self.test_results[cate][name])
-            except Exception:
-                pass
+            except Exception as e:
+                logger.warning("Failed to generate channel statistic for %s/%s: %s", cate, name, e)
 
         try:
             loop = asyncio.get_running_loop()
@@ -106,8 +110,8 @@ class ResultAggregator:
                 loop = asyncio.get_event_loop()
                 self._ensure_debounce_task_in_loop(loop)
                 loop.call_soon_threadsafe(self._flush_event.set)
-            except Exception:
-                pass
+            except Exception as e:
+                logger.debug("Failed to signal flush event: %s", e)
 
         if self._dirty_count >= self._min_items_before_flush:
             self._dirty_count = 0
@@ -130,7 +134,8 @@ class ResultAggregator:
                     self.base_data, result=None, filter_host=config.speed_test_filter_host,
                     ipv6_support=self.ipv6_support
                 )
-            except Exception:
+            except Exception as e:
+                logger.warning("Failed to compute initial sorted view: %s", e)
                 self.last_full_sorted = defaultdict(lambda: defaultdict(list))
 
         if affected:
@@ -157,7 +162,8 @@ class ResultAggregator:
                     partial_base, result=partial_result, filter_host=config.speed_test_filter_host,
                     ipv6_support=self.ipv6_support
                 )
-            except Exception:
+            except Exception as e:
+                logger.warning("Failed to compute partial sorted view: %s", e)
                 new_sorted = defaultdict(lambda: defaultdict(list))
         else:
             try:
@@ -165,7 +171,8 @@ class ResultAggregator:
                     self.base_data, result=test_copy, filter_host=config.speed_test_filter_host,
                     ipv6_support=self.ipv6_support
                 )
-            except Exception:
+            except Exception as e:
+                logger.warning("Failed to compute full sorted view: %s", e)
                 new_sorted = defaultdict(lambda: defaultdict(list))
 
         merged = defaultdict(lambda: defaultdict(list))
@@ -232,8 +239,8 @@ class ResultAggregator:
         affected = None if force else (pending if pending else None)
         try:
             await self._atomic_write_sorted_view(test_copy, affected=affected, finished=finished_for_flush)
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning("Failed to flush sorted view to file: %s", e)
 
     async def _run_loop(self):
         """

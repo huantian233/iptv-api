@@ -1,8 +1,11 @@
 import gzip
+import logging
 import os
 import pickle
 import time
 from typing import Dict, Optional, Set
+
+logger = logging.getLogger(__name__)
 
 MAX_BACKOFF = 24 * 3600
 BASE_BACKOFF = 60
@@ -78,8 +81,8 @@ def load(path: Optional[str]) -> None:
                 for k, v in data.items():
                     if k not in _frozen:
                         _frozen[k] = v
-    except Exception:
-        pass
+    except Exception as e:
+        logger.warning("Failed to load frozen URL data from %s: %s", path, e)
 
 
 def save(path: Optional[str]) -> None:
@@ -91,8 +94,8 @@ def save(path: Optional[str]) -> None:
             os.makedirs(dirp, exist_ok=True)
         with gzip.open(path, "wb") as f:
             pickle.dump(_frozen, f)
-    except Exception:
-        pass
+    except Exception as e:
+        logger.warning("Failed to save frozen URL data to %s: %s", path, e)
 
 
 __all__ = ["mark_url_bad", "mark_url_good", "is_url_frozen", "get_current_frozen_set", "load", "save"]

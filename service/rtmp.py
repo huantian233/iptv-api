@@ -1,4 +1,5 @@
 import json
+import logging
 import os
 import subprocess
 import sys
@@ -12,6 +13,7 @@ from utils.db import get_db_connection, return_db_connection
 from utils.i18n import t
 from utils.tools import join_url, resource_path, render_nginx_conf
 
+logger = logging.getLogger(__name__)
 nginx_dir = resource_path(os.path.join('utils', 'nginx-rtmp-win32'))
 nginx_conf_template = resource_path(os.path.join(nginx_dir, 'conf', 'nginx.conf.template'))
 nginx_conf = resource_path(os.path.join(nginx_dir, 'conf', 'nginx.conf'))
@@ -121,12 +123,13 @@ def _terminate_process_safe(process):
     try:
         process.terminate()
         process.wait(timeout=5)
-    except Exception:
+    except Exception as e:
+        logger.debug("Graceful termination failed, forcing kill: %s", e)
         try:
             process.kill()
             process.wait(timeout=5)
-        except Exception:
-            pass
+        except Exception as e2:
+            logger.warning("Failed to kill process: %s", e2)
 
 
 def cleanup_streams(streams):
@@ -149,8 +152,8 @@ def cleanup_streams(streams):
 def monitor_stream_process(streams, process, channel_id):
     try:
         process.wait()
-    except Exception:
-        pass
+    except Exception as e:
+        logger.debug("Error waiting for stream process %s: %s", channel_id, e)
     with STREAMS_LOCK:
         if channel_id in streams and streams[channel_id] is process:
             del streams[channel_id]
